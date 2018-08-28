@@ -1,2 +1,2 @@
 # PSD-to-HTML_1
-Kit-Ramotion-PSD
+Kit-Ramotion
