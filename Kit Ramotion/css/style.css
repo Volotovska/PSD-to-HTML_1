@@ -9,12 +9,12 @@ body{
 }
 .white_rectagle{
 	background: url(../img/rect_white.png) no-repeat center / cover;
-	width: 576px;
+	width: 580px;
 	height: 155px;
 }
 .scotch_soda{
 	background: url(../img/goods.png) no-repeat center / cover;
-	width: 576px;
+	width: 580px;
 	height: 454px;
 }
 .red_circle{
