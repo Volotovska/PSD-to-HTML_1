@@ -6,20 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header>
-		<div class="part1">
+		<div id="part1">
 			<div class='white_rectagle'>
 				<div class='container_for_circle'>
-					<div class="red_circle">
-						New Collection
-					</div>
 				</div>
 				<div class='container_for_logo'>
-					<img id="logo" src="img/logo.png">
-					</img>
 				</div>
 			</div>
-			<div class="scotch_soda">
+			<div class="goods">
 				<div class="container_for_points">
 					<img class="elipse" src="img/ellipse_grey.png" />
 					<img class="elipse" src="img/ellipse_yellow.png" />
@@ -27,11 +21,12 @@
 					<img class="elipse" src="img/ellipse_grey.png" />
 					<img class="elipse" src="img/ellipse_grey.png" />
 				</div>
+			</div>
+
+			<div class='white_rectagle'>
 				<div class='container_for_divider'>
 					<img class="divider" src="img/divider.png" />
 				</div>
-			</div>
-			<div class='white_rectagle'>
 				<div id="container_for_price">
 					<div class="text_rect">
 						<div>Genuine Leather</div>
@@ -45,24 +40,86 @@
 					<img class="divider" src="img/divider.png" />
 				</div>
 				<div id="container_for_price">
-					<div class="rect_button">
+					<button class="rect_button" type='submit'>
 						<div class="rect_text">
 							Add to Favourities
 						</div>
-					</div>
+					</button>
 					<div class="container_for_divH">
 						<img id="hor_divider" src="img/divider_horiz.png">
 						</img>
 					</div>
-					<div class="rect_button">
+					<button class="rect_button" type='submit'>
 						<div class="rect_text">
 							Add to Cart
 						</div>
-					</div>
+					</button>
 				</div>
 			</div>
 		</div>
-	</header>
+
+		<div id="part2">
+			<div id="container_for_pic">
+			</div>
+			<div class="container_for_title">
+				Personal Data
+			</div>
+			<div id="container_for_divider3">
+				<img class="divider3" src="img/divider.png" />
+			</div>
+
+			<form>
+				<div class="part_form" >
+					<div class="name_input">
+					First Name
+					</div>
+					<input type="text" name="answer" value="Silvia" class="input_form"> </input>
+					<div class="container_for_check">
+						<img class="check" src="img/check_green.png" />
+					</div>
+				</div>
+
+				<div class="part_form">
+					<div class="name_input">
+					Last Name
+					</div>
+					<input type="text" name="answer" value="Monter334lo" class="input_form"> </input>
+					<div class="container_for_check">
+						<img class="check" src="img/check_red.png" />
+					</div>
+				</div>
+
+				<div class="part_form">
+					<div class="name_input">
+					Country
+					</div>
+					<select name="country_select" class="select_form">
+						<option value="United Kingdom"  >United Kingdom </option>
+					</select>
+					<div class="container_for_check">
+						<img class="check" src="img/check_green.png" />
+					</div>
+				</div>
+				<div class="part_form">
+					<div class="name_input">
+					City
+					</div>
+					<select name="country_select" class="select_form select_form_4">
+						<option value="Bristol"  >Bristol </option>
+					</select>
+					<div class="container_for_check">
+						<img class="check" src="img/check_green.png" />
+					</div>
+				</div>
+				<div id="container_for_divider4">
+					<img class="divider3" src="img/divider.png" />
+				</div>
+				<div id="button_container">
+					<button type="submit"  class="form_button"> Cancel </button>
+					<button type="submit" class="form_button"> Apply </button>
+				</div>
+			</form>
+		</div>
 
 </body>
 </html>
