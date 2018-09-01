@@ -29,16 +29,27 @@ section{
 	margin: 32px 118px 0px;
 }
 .menuLi{
-	width: 82px;
-	height: 42px;
-	color: #cfcfcf;
+	width: 83px;
+	height: 29px;
 	font-size: 14px;
 	list-style: none;
-	border-right: 2px solid #cfcfcf;
+	border-right: 1px solid #24211e;
 	text-align: center;
+	vertical-align:middle;
+	display: block;
+	padding-top: 13px;
+	background: #3f3933;
+}
+.menuLi:hover{
+	background: #544c44;
+	cursor: pointer;
+}
+.menuLi:nth-child(5){
+	border-right: none;
 }
 #menu{
 	border: 2px solid #24211e;
+	border-radius: 5px;
 	width: 420px;
 	height: 42px;
 }
@@ -48,4 +59,15 @@ ul{
 }
 li{
 	float:left;
+}
+li a{
+	text-decoration: none;
+	color: #cfcfcf;
+}
+#fig3{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 150px;
+	left: 429px;
 }
