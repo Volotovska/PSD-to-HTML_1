@@ -25,12 +25,11 @@ section{
 }
 .container{
 	display: flex;
-	flex-direction: column;
-	margin: 32px 118px 0px;
+	margin: 32px 113px 0px;
 }
 .menuLi{
-	width: 83px;
-	height: 29px;
+	width: 81px;
+	height: 26px;
 	font-size: 14px;
 	list-style: none;
 	border-right: 1px solid #24211e;
@@ -50,8 +49,9 @@ section{
 #menu{
 	border: 2px solid #24211e;
 	border-radius: 5px;
-	width: 420px;
-	height: 42px;
+	width: 410px;
+	height: 40px;
+	display: inline-block;
 }
 ul{
 	margin: 0px;
@@ -70,4 +70,31 @@ li a{
 	position: absolute;
 	top: 150px;
 	left: 429px;
+}
+#clicker{
+	border: 2px solid #24211e;
+	border-radius: 5px;
+	width: 295px;
+	height: 40px;
+	display: inline-block;
+	margin-left: 20px;
+}
+.clickerItem{
+	width: 37px;
+	height: 39px;
+	border-right: 1px solid #24211e;
+	text-align: center;
+	vertical-align:middle;
+	display: block;
+	float: left;
+	background: #3f3933;
+}
+.clickerItem:nth-child(2){
+	width: 169px;
+}
+.clickerItem:nth-child(3){
+	width: 86px;
+}
+#clickerTriangle{
+	padding-top: 12px;
 }
