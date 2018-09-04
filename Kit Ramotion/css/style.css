@@ -646,7 +646,6 @@ body{
 }
 #container_part8{
 	display: flex;
-	flex-direction: column;
 	margin: 47px 0px 0px 50px;
 }
 #photo{
@@ -701,4 +700,42 @@ body{
 	height: 30px;
 	position: absolute;
 	margin: 394px 35px;
+}
+#part9{
+	width: 536px;
+	height: 590px;
+	margin-left: 55px;
+	background: url(../img/background_white.png) no-repeat center / cover;
+}
+#background9{
+	width: 478px;
+	height: 517px;
+	margin: 30px 30px 0px;
+	position: absolute;
+	background: url(../img/background_9.png) no-repeat center / cover;
+}
+#icons{
+	width: 45px;
+	height: 45px;
+	margin: 23px 220px 0px;
+	background: url(../img/icons.png) no-repeat center / cover;
+}
+#container_for_circles{
+	margin-top: 150px;
+	display: flex;
+}
+.circle_part9{
+	width: 92px;
+	height: 92px;
+	background: url(../img/sale.png) no-repeat center / contain;
+	margin-right: 50px;
+}
+.circle_part9:nth-child(2){
+	background: url(../img/collection.png) no-repeat center / contain;
+}
+.circle_part9:nth-child(3){
+	background: url(../img/price.png) no-repeat center / contain;
+}
+.circle_part9:nth-child(1){
+	margin-left: 56px;
 }
