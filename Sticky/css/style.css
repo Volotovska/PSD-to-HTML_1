@@ -106,6 +106,14 @@ li a{
 	background: #3f3933;
 	border-radius: 5px;
 }
+#fig1:hover #fig1_1{
+	background: url(../img/dropdown.png) no-repeat center / cover;
+	cursor: pointer;
+}
+#fig1:hover #fig1_2{
+	background: url(../img/arrow_down.png) no-repeat center / cover;
+	cursor: pointer;
+}
 .container:nth-child(2){
 	margin-top: 25px;
 }
@@ -228,4 +236,68 @@ input{
 #search{
 	background: url(../img/search.png) no-repeat center / contain;
 	margin-left: 9px;
+}
+.container:nth-child(3){
+	margin-top: 18px;
+}
+li{
+	display: none;
+}
+#context_menu:hover .menu_item{
+	display: block;
+	width: 115px;
+	height: 25px;
+	border: 1px solid #24211e;
+	background: #49423c;
+	padding-left: 5px;
+	color: #cfcfcf;
+	padding-top: 5px;
+	font-size: 11px;
+	cursor: pointer;
+}
+#context_menu:hover #fig1_1{
+	background: url(../img/dropdown.png) no-repeat center / cover;
+}
+#context_menu:hover #fig1_2{
+	background: url(../img/arrow_down.png) no-repeat center / cover;
+}
+#context_menu:hover .menu_item:hover{
+	background: #3d3833;
+	color: #f5b50c;
+}
+.black_square{
+	background: url(../img/depth.png) no-repeat center / cover;
+	width: 17px;
+	height: 17px;
+	margin-top: 19px;
+	margin-right: 5px;
+}
+#empty_space{
+	width: 126px;
+}
+.check_mark{
+	margin-bottom: 2px;
+	margin-left: 2px;
+}
+#empty_space2{
+	width: 20px;
+}
+.black_circle{	
+	background: url(../img/circle_black.png) no-repeat center / cover;
+	width: 17px;
+	height: 17px;
+	margin-top: 19px;
+	margin-right: 5px;
+}
+.point{
+	margin-bottom: 2px;
+	margin-left: 5px;
+}
+#percentage{
+	width: 31px;
+	height: 20px;
+	margin-left:18px;
+	margin-right: 23px;
+	margin-top: 20px;
+	background: url(../img/percentage.png) no-repeat center / cover;
 }
