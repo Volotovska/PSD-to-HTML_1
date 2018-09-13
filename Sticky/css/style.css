@@ -587,7 +587,7 @@ li{
 	cursor: pointer;
 }
 #triangleUp1{
-	top: 427px;
+	top: 433px;
     right: 283px;
 }
 .triangleDown{
@@ -600,51 +600,51 @@ li{
     cursor: pointer;
 }
 #triangleDown1{
-	top: 441px;
+	top: 448px;
     right: 283px;
 }
 #day{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 425px;
+	top: 432px;
     right: 302px;
 }
 #triangleUp2{
-	top: 427px;
+	top: 434px;
     right: 226px;
 }
 #triangleDown2{
-	top: 441px;
+	top: 448px;
     right: 226px;
 }
 #month{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 425px;
+	top: 432px;
     right: 247px;
 }
 #year1half{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 425px;
+	top: 432px;
     right: 190px;
 }
 #year2half{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 425px;
+	top: 432px;
     right: 156px;
 }
 #triangleUp3{
-	top: 427px;
+	top: 434px;
     right: 135px;
 }
 #triangleDown3{
-	top: 441px;
+	top: 448px;
     right: 135px;
 }
 #scrollbar{
