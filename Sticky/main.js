@@ -44,10 +44,14 @@ $('#dots2').mouseup(function(){
 
 $( "#fig1_1" ).contextmenu(function(event) {
 	event.preventDefault();
-	$('<div />').attr('id','my_div');
-	console.log($('my_div'));
-	$( "#fig1" ).add( "p" ).css( "background-color", "red" ).html('hello');
-});
+
+    $("<div>hello</div>").css({
+        width: "100px",
+        height: "100px",
+        position: 'absolute',
+        "background-color": "white",
+        "z-index": 1,
+    }).appendTo("#fig1");
 
 $('input').change(function(event){
 	console.log($(this).val());
