@@ -692,3 +692,11 @@ li{
 	margin-left: 12px;
 	cursor: pointer;
 }
+#result{
+	position: absolute;
+	background: #f3ac0b;
+	display: inline;
+	font-size: 12px;
+	right: 126px;
+	top: 210px;s
+}
