@@ -319,14 +319,14 @@ li{
 	height: 9px;
 	position: absolute;
 	top: 176px;
-	right: 268px;
+	left: 598px;
 }
-#dotProgressBar{
+#draggable{
 	width: 16px;
 	height: 16px;
 	position: absolute;
 	top: 173px;
-	right: 259px;
+	left: 685px;
 }
 .clickerItem:hover{
 	background: #544c44;
@@ -663,12 +663,12 @@ li{
 	margin-top: 22px;
 }
 #handle{
-	height: 15px;
+	height: 14px;
 	background: url(../img/handle.png) no-repeat center / contain;	
 	width: 265px;
-	margin-top: 3px;
-	margin-left: 260px;
-	display: inline-block;
+	position: absolute;
+	top: 498px;
+	left: 333px;
 }
 #triangleLeft{
 	width: 0;
@@ -676,9 +676,9 @@ li{
 	border-style: solid;
 	border-width: 3px 6px 3px 0;
 	border-color: transparent white transparent transparent;
-	display: inline-block;
-	margin-bottom: 3px;
-	margin-left: 156px;
+	position: absolute;
+	top: 502px;
+	left: 800px;
 	cursor: pointer;
 }
 #triangleRight{
@@ -687,9 +687,9 @@ li{
 	border-style: solid;
 	border-width: 3px 0 3px 6px;
 	border-color: transparent transparent transparent white;
-	display: inline-block;
-	margin-bottom: 3px;
-	margin-left: 12px;
+	position: absolute;
+	top: 502px;
+	left: 820px;
 	cursor: pointer;
 }
 #result{
@@ -699,4 +699,10 @@ li{
 	font-size: 12px;
 	right: 126px;
 	top: 210px;s
+}
+#year2half1{
+	float: left;
+}
+#year2half2{
+	float: left;
 }
