@@ -85,40 +85,63 @@ $(".fig6").click(function(){
     // console.log(text);
 });
 
-
-$('#dotProgressBar').mousedown(function(event) { 
-    const startPageX = event.pageX;
-
-
-    moveAt(event);
-
-    console.log(event.pageX);
-
-    function moveAt(event) {
-        console.log(1);
-        $("#dotProgressBar").css('transform', `translateX(${event.pageX - startPageX}px)`);
-    }
-
-    // function move(event) {
-    //     moveAt(event);
-    // }
-
-    // $(document).mousemove(move);
-
-    // function up(event) {
-    //     moveAt(event);
-
-    //     $(document).off('mousemove', move);
-    //     $(document).off('mouseup', up);
-    // };
-
-    // $(document).mouseup(up);
-
-    $(document).on('mousemove', moveAt);
-
-    $(document).mouseup(function() {
-        $(document).off('mousemove', moveAt);
-        $(document).off('mouseup');
+$( function() {
+    $( "#draggable" ).draggable({
+        axis: "x",
+        containment: "parent",
+        drag: function(event, ui) {
+            $('#progressBar').css('width', 93+parseInt($( "#draggable" ).css('left')) - 685);
+        }
     });
+});
 
+var counter = 1;
+
+$('#triangleUp1').click(function(){
+    var initial = parseInt($('#day').html());
+    if(initial >= 1 && initial < 31){
+        $('#day').html(initial+counter);
+    }
+});
+
+$('#triangleDown1').click(function(){
+    var initial = parseInt($('#day').html());
+    if(initial > 1 && initial <= 31){
+        $('#day').html(initial-counter);
+    }
+});
+
+$('#triangleUp2').click(function(){
+    var initial = parseInt($('#month').html());
+    if(initial >= 1 && initial < 12){
+        $('#month').html(initial+counter);
+    }
+});
+
+$('#triangleDown2').click(function(){
+    var initial = parseInt($('#month').html());
+    if(initial > 1 && initial <= 12){
+        $('#month').html(initial-counter);
+    }
+});
+
+$('#triangleUp3').click(function(){
+    var initial = parseInt($('#year2half2').html());
+    if(initial >= 0 && initial < 9){
+        $('#year2half2').html(initial+counter);
+    }
+});
+
+$('#triangleDown3').click(function(){
+    var initial = parseInt($('#year2half2').html());
+    if(initial > 0 && initial <= 9){
+        $('#year2half2').html(initial-counter);
+    }
+});
+
+$('#triangleLeft').click(function(){
+    var added_sum = 120;
+    var initial_margin = $('#handle').css('margin-left');
+    var new_margin = parseInt(initial_margin) - added_sum;
+    $('#handle').css('margin-left', new_margin);
 });
