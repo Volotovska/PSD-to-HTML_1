@@ -6,6 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<link rel="stylesheet" href="/resources/demos/style.css">
+  	 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 	<div id="main">
@@ -55,7 +59,7 @@
 						<img id="loadingBar" src="img/loading_bar.png">
 							<img id="progressBar" src="img/progress_bar.png">
 							</img>
-							<img id="dotProgressBar" src="img/dot_progress_bar.png">
+							<img src="img/dot_progress_bar.png" id="draggable" class="ui-widget-content">
 							</img>
 						</img>
 					</div>
@@ -249,7 +253,9 @@
 					</div>
 					<div id="year1half">19
 					</div>
-					<div id="year2half">85
+					<div id="year2half">
+						<div id="year2half1"> 8</div>
+						<div id="year2half2"> 5</div>
 					</div>
 					<div class="triangleUp" id="triangleUp3">
 					</div>
