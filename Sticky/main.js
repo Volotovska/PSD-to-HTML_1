@@ -82,11 +82,12 @@ $('input').change(function(event){
 
 $(".fig6").click(function(){
     $('#result').css('display', 'none');
-    console.log(text);
+    // console.log(text);
 });
 
 
 $('#dotProgressBar').mousedown(function(event) { 
+    const startPageX = event.pageX;
 
 
     moveAt(event);
@@ -94,16 +95,30 @@ $('#dotProgressBar').mousedown(function(event) {
     console.log(event.pageX);
 
     function moveAt(event) {
-        $("#dotProgressBar").css('right', event.pageX);
+        console.log(1);
+        $("#dotProgressBar").css('transform', `translateX(${event.pageX - startPageX}px)`);
     }
 
-    $('document').mousemove(function(event) {
-        moveAt(event);
-    });
+    // function move(event) {
+    //     moveAt(event);
+    // }
 
-    $('#dotProgressBar').mouseup(function() {
-    $('document').mousemove = null;
-    $('document').mouseup = null;
-  });
+    // $(document).mousemove(move);
+
+    // function up(event) {
+    //     moveAt(event);
+
+    //     $(document).off('mousemove', move);
+    //     $(document).off('mouseup', up);
+    // };
+
+    // $(document).mouseup(up);
+
+    $(document).on('mousemove', moveAt);
+
+    $(document).mouseup(function() {
+        $(document).off('mousemove', moveAt);
+        $(document).off('mouseup');
+    });
 
 });
