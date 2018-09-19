@@ -8,7 +8,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   	<link rel="stylesheet" href="/resources/demos/style.css">
-  	 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
@@ -66,8 +65,9 @@
 					<div class="clickerItem">
 						<img src="img/volume_icon.png" id="volumeIcon" alt="" />
 						<div id="loadingBar2">
-							<div id="progressBar2">
-							</div>
+							<img id="progressBar2" src="img/progressBar2.png">
+							</img>
+							<img src="img/dot_progress_bar.png" id="draggable2" class="ui-widget-content">
 						</div>
 					</div>
 				</div>
@@ -79,6 +79,7 @@
 					<div id="fig1_2">
 					</div>
 				</div>
+				<div class="notShown">some information</div>
 				<div id="fig2">
 					<div class="fig2_cont">
 						<div id="fig2_1" class="fig2_gen">
