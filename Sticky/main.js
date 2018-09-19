@@ -126,22 +126,117 @@ $('#triangleDown2').click(function(){
 });
 
 $('#triangleUp3').click(function(){
-    var initial = parseInt($('#year2half2').html());
-    if(initial >= 0 && initial < 9){
-        $('#year2half2').html(initial+counter);
+    var year2half2 = parseInt($('#year2half2').html());
+    var year2half1 =  parseInt($('#year2half1').html());
+    var year1half = parseInt($('#year1half').html());
+    var triger;
+    if(year2half2 >= 0 && year2half2 < 9){
+        $('#year2half2').html(year2half2+counter);
+        triger = 1;
+        console.log(triger);
+    }
+    else if(year2half2 == 9 && year2half1 != 9){
+        $('#year2half1').html(year2half1+counter);
+        $('#year2half2').html(0);
+        triger = 0;
+        console.log(triger);
+    }
+    else if(year2half2 == 9 && year2half1 == 9){
+        $('#year2half2').html(0);
+        $('#year2half1').html(0);
+        $('#year1half').html(year1half+counter);
     }
 });
 
 $('#triangleDown3').click(function(){
-    var initial = parseInt($('#year2half2').html());
-    if(initial > 0 && initial <= 9){
-        $('#year2half2').html(initial-counter);
+    var year2half2 = parseInt($('#year2half2').html());
+    var year2half1 =  parseInt($('#year2half1').html());
+    var year1half = parseInt($('#year1half').html());
+    var triger;
+    if(year2half2 > 0 && year2half2 <= 9){
+        $('#year2half2').html(year2half2-counter);
+        triger = 1;
+        console.log(triger);
+    }
+        else if(year2half2 == 0 && year2half1 != 0){
+        $('#year2half1').html(year2half1-counter);
+        $('#year2half2').html(9);
+        triger = 0;
+        console.log(triger);
+    }
+    else if(year2half2 == 0 && year2half1 == 0){
+        $('#year2half2').html(9);
+        $('#year2half1').html(9);
+        $('#year1half').html(year1half-counter);
     }
 });
 
+
 $('#triangleLeft').click(function(){
-    var added_sum = 120;
-    var initial_margin = $('#handle').css('margin-left');
-    var new_margin = parseInt(initial_margin) - added_sum;
-    $('#handle').css('margin-left', new_margin);
+    var initial_left = $("#handle").css('left');
+    var added = 31;
+    if(parseInt(initial_left) > 148){
+        var new_left = parseInt(initial_left) - added;
+        console.log(initial_left);
+        $("#handle").css('left', new_left);
+    }
+});
+
+$('#triangleRight').click(function(){
+    var initial_left = $("#handle").css('left');
+    var added = 31;
+    if(parseInt(initial_left) < 500){
+        var new_left = parseInt(initial_left) + added;
+        console.log(initial_left);
+        $("#handle").css('left', new_left);
+    }
+});
+
+$( function() {
+    $( "#switch_icon" ).draggable({
+        axis: "x",
+        containment: "parent",
+    })
+});
+
+$( function() {
+    $( "#draggable2" ).draggable({
+        axis: "x",
+        containment: "parent",
+        drag: function(event, ui) {
+            $('#progressBar2').css('width', 38+parseInt($( "#draggable2" ).css('left')) - 812);
+        }
+    });
+});
+
+$( function() {
+    $( "#dot_white" ).draggable({
+        axis: "x",
+        containment: "parent",
+    })
+});
+
+$( function() {
+    $( "#dot_yellow" ).draggable({
+        axis: "x",
+        containment: "parent",
+    })
+});
+
+var div = $( "div.notShown" );
+$('.menuLi:first').contextmenu(function(e) {
+    e.preventDefault();
+    div.toggleClass( "shown" );
+});
+
+$( ".star_yellow" ).each(function(index) {
+    $(this).on("click", function() {
+        $(this).toggleClass( "star_black" );
+    });
+});
+
+$( ".star_black" ).each(function(index) {
+    $(this).on("click", function() {
+        $(this).toggleClass( "star_yellow" );
+    });
 });
