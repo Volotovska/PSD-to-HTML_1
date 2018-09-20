@@ -82,7 +82,7 @@ $('input').change(function(event){
 
 $(".fig6").click(function(){
     $('#result').css('display', 'none');
-    // console.log(text);
+    console.log(text);
 });
 
 $( function() {
@@ -232,11 +232,6 @@ $('.menuLi:first').contextmenu(function(e) {
 $( ".star_yellow" ).each(function(index) {
     $(this).on("click", function() {
         $(this).toggleClass( "star_black" );
-    });
-});
-
-$( ".star_black" ).each(function(index) {
-    $(this).on("click", function() {
         $(this).toggleClass( "star_yellow" );
     });
 });
