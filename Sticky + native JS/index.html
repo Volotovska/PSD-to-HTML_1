@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<title>Sticky</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="main">
@@ -54,15 +53,16 @@
 						<img id="loadingBar" src="img/loading_bar.png">
 							<img id="progressBar" src="img/progress_bar.png">
 							</img>
-							<img id="dotProgressBar" src="img/dot_progress_bar.png">
+							<img src="img/dot_progress_bar.png" id="draggable" class="ui-widget-content">
 							</img>
 						</img>
 					</div>
 					<div class="clickerItem">
 						<img src="img/volume_icon.png" id="volumeIcon" alt="" />
 						<div id="loadingBar2">
-							<div id="progressBar2">
-							</div>
+							<img id="progressBar2" src="img/progressBar2.png">
+							</img>
+							<img src="img/dot_progress_bar.png" id="draggable2" class="ui-widget-content">
 						</div>
 					</div>
 				</div>
@@ -74,6 +74,7 @@
 					<div id="fig1_2">
 					</div>
 				</div>
+				<div class="notShown">some information</div>
 				<div id="fig2">
 					<div class="fig2_cont">
 						<div id="fig2_1" class="fig2_gen">
@@ -116,9 +117,9 @@
 					<div id="fig3_2" class="triangle">
 					</div>
 				</div>
-				<input type="text" value="Search">
+				<input id="input1" type="text" value="Search">
 				</input>
-				<div class="fig6">
+				<div id ="fig6">
 					<div id="search" class="triangle">
 					</div>
 				</div>
@@ -178,12 +179,12 @@
 								</div>
 							</div>
 							<div id="base3">
-								<div id="dots1">
-								</div>
-								<div id="loadingBar3">
-								</div>
-								<div id="dots2">
-								</div>
+								<img id="dots1" src="img/dots.png" alt="">
+								</img>
+								<img id="loadingBar3" src="img/loading_bar3.png" alt="">
+								</img>
+								<img id="dots2" src="img/dots.png" alt="">
+								</img>
 							</div>
 						</div>
 						<div class="container_item">
@@ -248,7 +249,9 @@
 					</div>
 					<div id="year1half">19
 					</div>
-					<div id="year2half">85
+					<div id="year2half">
+						<div id="year2half1"> 8</div>
+						<div id="year2half2"> 5</div>
 					</div>
 					<div class="triangleUp" id="triangleUp3">
 					</div>
@@ -265,6 +268,8 @@
 					<div id="triangleRight">
 					</div>
 				</div>
+			</div>
+			<div id="result">
 			</div>
 		</section>
 	<script type="text/javascript" src="main.js"></script>
