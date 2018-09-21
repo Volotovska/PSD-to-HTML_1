@@ -114,17 +114,156 @@ function mousedownFunc(event) {
 
     function moveAt(event) {
       var movedX = event.pageX;
+      console.log(movedX);
+      if(movedX < 754 && movedX > 607)
       var dif = initialX-movedX;
       draggable.style.left = parseInt(initial_left) - dif + 'px';
   	}
 
-  	document.onmousemove = function(event) {
-    	moveAt(event);
-  	}
+    document.addEventListener('mousemove', onmouseMove);
+    function onmouseMove(event) {
+      moveAt(event);
+    }
 
-  	draggable.onmouseup = function() {
-    	onmousemove = null;
-    	onmouseup = null;
+    draggable.addEventListener('mouseup', onmouseUp);
+
+  	function onmouseUp() {
+        document.removeEventListener('mousemove', onmouseMove);
+        draggable.removeEventListener('mouseup', onmouseUp);
+        }
+};
+
+var counter = 1;
+
+var triangleUp1 = document.getElementById('triangleUp1');
+var triangleDown1 = document.getElementById('triangleDown1');
+var triangleUp2 = document.getElementById('triangleUp2');
+var triangleDown2 = document.getElementById('triangleDown2');
+var triangleUp3 = document.getElementById('triangleUp3');
+var triangleDown3 = document.getElementById('triangleDown3');
+
+var month = document.getElementById('month').innerHTML;;
+var year2half2 = document.getElementById('year2half2').innerHTML;;
+var year2half1 = document.getElementById('year2half1').innerHTML;;
+
+triangleUp1.addEventListener('click', addDayFunc);
+
+function addDayFunc(){
+    var day = document.getElementById('day').innerHTML;
+    var initial = parseInt(day);
+    if(initial >= 1 && initial < 31){
+        document.getElementById('day').innerHTML = initial+counter;
+    }
+}
+
+triangleDown1.addEventListener('click', substractDayFunc);
+
+function substractDayFunc(){
+    var day = document.getElementById('day').innerHTML;
+    var initial = parseInt(day);
+    if(initial > 1 && initial <= 31){
+        document.getElementById('day').innerHTML = initial-counter;
+    }
+}
+
+triangleUp2.addEventListener('click', addMonthFunc);
+
+function addMonthFunc(){
+    var month = document.getElementById('month').innerHTML;
+    var initial = parseInt(month);
+    if(initial >= 1 && initial < 12){
+        document.getElementById('month').innerHTML = initial+counter;
+    }
+}
+
+triangleDown2.addEventListener('click', substractMonthFunc);
+
+function substractMonthFunc(){
+    var month = document.getElementById('month').innerHTML;
+    var initial = parseInt(month);
+    if(initial > 1 && initial <= 12){
+        document.getElementById('month').innerHTML = initial-counter;
+    }
+}
+
+triangleUp3.addEventListener('click', addYearFunc);
+
+function addYearFunc(){
+    var year2half2 = document.getElementById('year2half2').innerHTML;
+    var initial_year2half2 = parseInt(year2half2);
+    var year2half1 =  document.getElementById('year2half1').innerHTML;
+    var initial_year2half1 = parseInt(year2half1);
+    var year1half = document.getElementById('year1half').innerHTML;
+    var initial_year1half = parseInt(year1half);
+    var triger;
+    if(year2half2 >= 0 && year2half2 < 9){
+        document.getElementById('year2half2').innerHTML = initial_year2half2+counter;
+        triger = 1;
+        console.log(triger);
+    }
+    else if(year2half2 == 9 && year2half1 != 9){
+        document.getElementById('year2half1').innerHTML = initial_year2half1+counter;
+        document.getElementById('year2half2').innerHTML = 0;
+        triger = 0;
+        console.log(triger);
+    }
+    else if(year2half2 == 9 && year2half1 == 9){
+        document.getElementById('year2half1').innerHTML = 0;
+        document.getElementById('year2half2').innerHTML = 0;
+        document.getElementById('year1half').innerHTML = initial_year1half + counter;
     }
 };
 
+triangleDown3.addEventListener('click', substractYearFunc);
+
+function substractYearFunc(){
+    var year2half2 = document.getElementById('year2half2').innerHTML;
+    var initial_year2half2 = parseInt(year2half2);
+    var year2half1 =  document.getElementById('year2half1').innerHTML;
+    var initial_year2half1 = parseInt(year2half1);
+    var year1half = document.getElementById('year1half').innerHTML;
+    var initial_year1half = parseInt(year1half);
+    var triger;
+    if(year2half2 > 0 && year2half2 <= 9){
+        document.getElementById('year2half2').innerHTML = initial_year2half2-counter;
+        triger = 1;
+        console.log(triger);
+    }
+    else if(year2half2 == 0 && year2half1 != 0){
+        document.getElementById('year2half1').innerHTML = initial_year2half1-counter;
+        document.getElementById('year2half2').innerHTML = 9;
+        triger = 0;
+        console.log(triger);
+    }
+    else if(year2half2 == 0 && year2half1 == 0){
+        document.getElementById('year2half1').innerHTML = 9;
+        document.getElementById('year2half2').innerHTML = 9;
+        document.getElementById('year1half').innerHTML = initial_year1half - counter;
+    }
+};
+
+var triangleLeft = document.getElementById('triangleLeft');
+var triangleRight = document.getElementById('triangleLeft');
+var handle = document.getElementById('handle');
+
+triangleLeft.addEventListener('click', moveLeftFunc);
+
+function moveLeftFunc(){
+    var initial_left = window.getComputedStyle(handle,null).getPropertyValue("left");
+    var added = 31;
+    if(parseInt(initial_left) > 148){
+        var new_left = parseInt(initial_left) - added;
+        handle.style.left = new_left;
+    }
+}
+
+triangleRight.addEventListener('click', moveRightFunc);
+
+function moveRightFunc(){
+    var initial_left = window.getComputedStyle(handle,null).getPropertyValue("left");
+    var added = 31;
+    if(parseInt(initial_left) < 500){
+        var new_left = parseInt(initial_left) - added;
+        handle.style.left = new_left;
+    }
+}
