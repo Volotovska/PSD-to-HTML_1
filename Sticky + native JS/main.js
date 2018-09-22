@@ -103,34 +103,40 @@ function submitFunc(){
 }
 
 var draggable = document.getElementById('draggable');
-draggable.addEventListener('mousedown', mousedownFunc)
+var progressBar = document.getElementById('progressBar');
+draggable.addEventListener('mousedown', mousedownFunc);
 
 function mousedownFunc(event) {
+    console.log('mousedown');
 
 	var initialX = event.pageX;
 	var initial_left = window.getComputedStyle(draggable,null).getPropertyValue("left");
+    var initial_width = window.getComputedStyle(progressBar,null).getPropertyValue("width");
 
 	moveAt(event);
 
     function moveAt(event) {
       var movedX = event.pageX;
-      console.log(movedX);
+      // console.log(movedX);
       if(movedX < 754 && movedX > 607)
       var dif = initialX-movedX;
       draggable.style.left = parseInt(initial_left) - dif + 'px';
+      progressBar.style.width = parseInt(initial_width) - dif + 'px';
   	}
 
     document.addEventListener('mousemove', onmouseMove);
     function onmouseMove(event) {
-      moveAt(event);
+        console.log('mousemove');
+        moveAt(event);
     }
 
-    draggable.addEventListener('mouseup', onmouseUp);
+    document.addEventListener('mouseup', onmouseUp);
 
   	function onmouseUp() {
+        console.log('mouseup');
         document.removeEventListener('mousemove', onmouseMove);
-        draggable.removeEventListener('mouseup', onmouseUp);
-        }
+        document.removeEventListener('mouseup', onmouseUp);
+    }
 };
 
 var counter = 1;
@@ -266,4 +272,17 @@ function moveRightFunc(){
         var new_left = parseInt(initial_left) - added;
         handle.style.left = new_left;
     }
+}
+var range_swith_icon = document.getElementById('range_swith_icon');
+var switch_icon = document.getElementById('switch_icon');
+range_swith_icon.addEventListener('input', moveSwitchIconFunc);
+var initial_left = window.getComputedStyle(switch_icon,null).getPropertyValue("left");
+var max = 255;
+
+function moveSwitchIconFunc(){
+    var tracking = range_swith_icon.value;
+
+    var perc = tracking * 100 / max;
+
+    switch_icon.style.left = perc + '%';
 }
