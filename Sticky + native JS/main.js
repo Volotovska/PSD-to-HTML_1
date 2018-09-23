@@ -249,7 +249,7 @@ function substractYearFunc(){
 };
 
 var triangleLeft = document.getElementById('triangleLeft');
-var triangleRight = document.getElementById('triangleLeft');
+var triangleRight = document.getElementById('triangleRight');
 var handle = document.getElementById('handle');
 
 triangleLeft.addEventListener('click', moveLeftFunc);
@@ -259,7 +259,7 @@ function moveLeftFunc(){
     var added = 31;
     if(parseInt(initial_left) > 148){
         var new_left = parseInt(initial_left) - added;
-        handle.style.left = new_left;
+        handle.style.left = new_left + 'px';
     }
 }
 
@@ -269,8 +269,8 @@ function moveRightFunc(){
     var initial_left = window.getComputedStyle(handle,null).getPropertyValue("left");
     var added = 31;
     if(parseInt(initial_left) < 500){
-        var new_left = parseInt(initial_left) - added;
-        handle.style.left = new_left;
+        var new_left = parseInt(initial_left) + added;
+        handle.style.left = new_left + 'px';
     }
 }
 var range_swith_icon = document.getElementById('range_swith_icon');
