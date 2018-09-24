@@ -6,11 +6,11 @@ var dots2 =document.getElementById("dots2");
 
 dots1.addEventListener('click', movingDotFunc1);
 function movingDotFunc1(){
-	var initial_width = loadingBar3.offsetWidth;
-	var initial_left_bar = window.getComputedStyle(loadingBar3,null).getPropertyValue("left");
-	var initial_left_dot = window.getComputedStyle(dots1,null).getPropertyValue("left");
-	var initial_left_dot2 = window.getComputedStyle(dots2,null).getPropertyValue("left");
-	var added = 60;
+    var initial_width = loadingBar3.offsetWidth;
+    var initial_left_bar = window.getComputedStyle(loadingBar3,null).getPropertyValue("left");
+    var initial_left_dot = window.getComputedStyle(dots1,null).getPropertyValue("left");
+    var initial_left_dot2 = window.getComputedStyle(dots2,null).getPropertyValue("left");
+    var added = 60;
 
     if(parseInt(initial_left_dot) > 352){
         var new_width = (parseInt(initial_width) + added);
@@ -22,25 +22,25 @@ function movingDotFunc1(){
         dots1.style.left = new_left_dot + 'px';
     }
     else if(parseInt(initial_left_dot) == 352 && parseInt(initial_left_dot2) == 488){
-    	loadingBar3.style.width = '76px';
-		loadingBar3.style.left = '418px';
-		dots1.style.left = '412px';
-		dots2.style.left = '488px';
+        loadingBar3.style.width = '76px';
+        loadingBar3.style.left = '418px';
+        dots1.style.left = '412px';
+        dots2.style.left = '488px';
     }
     else if(parseInt(initial_left_dot) == 352 && parseInt(initial_left_dot2) == 548){
-    	loadingBar3.style.width = '136px';
-		loadingBar3.style.left = '418px';
-		dots1.style.left = '412px';
-		dots2.style.left = '548px';
+        loadingBar3.style.width = '136px';
+        loadingBar3.style.left = '418px';
+        dots1.style.left = '412px';
+        dots2.style.left = '548px';
     }
 }
 
 dots2.addEventListener('click', movingDotFunc2);
 function movingDotFunc2(){
-	var initial_width = loadingBar3.offsetWidth;
-	var initial_left_dot = window.getComputedStyle(dots2,null).getPropertyValue("left");
-	var initial_left_dot1 = window.getComputedStyle(dots1,null).getPropertyValue("left");
-	var added = 60;
+    var initial_width = loadingBar3.offsetWidth;
+    var initial_left_dot = window.getComputedStyle(dots2,null).getPropertyValue("left");
+    var initial_left_dot1 = window.getComputedStyle(dots1,null).getPropertyValue("left");
+    var added = 60;
 
     if(parseInt(initial_left_dot) < 548){
         var new_width = (parseInt(initial_width) + added);
@@ -49,16 +49,16 @@ function movingDotFunc2(){
         dots2.style.left = new_left_dot + 'px';
     }
     else if(parseInt(initial_left_dot) == 548 && parseInt(initial_left_dot1) == 412){
-    	loadingBar3.style.width = '76px';
-		loadingBar3.style.left = '418px';
-		dots1.style.left = '412px';
-		dots2.style.left = '488px';
+        loadingBar3.style.width = '76px';
+        loadingBar3.style.left = '418px';
+        dots1.style.left = '412px';
+        dots2.style.left = '488px';
     }
     else if(parseInt(initial_left_dot) == 548 && parseInt(initial_left_dot1) == 352){
-    	loadingBar3.style.width = '136px';
-		loadingBar3.style.left = '358px';
-		dots1.style.left = '352px';
-		dots2.style.left = '488px';
+        loadingBar3.style.width = '136px';
+        loadingBar3.style.left = '358px';
+        dots1.style.left = '352px';
+        dots2.style.left = '488px';
     }
 }
 
@@ -66,21 +66,21 @@ var fig1_1 = document.getElementById('fig1_1');
 fig1_1.addEventListener('mouseenter', addInfoFunc);
 var div = document.createElement('div');
 
-function addInfoFunc(){	
-	fig1_1.appendChild(div);
-	div.style.position = 'absolute';
-	div.style.height = '100px';
-	div.style.width = '100px';
-	div.style.backgroundColor = "white";
-	div.style.zIndex = "1";
-	div.innerHTML = "some information";
-	div.style.top = "270px";
-	div.style.left = "117px";
+function addInfoFunc(){ 
+    fig1_1.appendChild(div);
+    div.style.position = 'absolute';
+    div.style.height = '100px';
+    div.style.width = '100px';
+    div.style.backgroundColor = "white";
+    div.style.zIndex = "1";
+    div.innerHTML = "some information";
+    div.style.top = "270px";
+    div.style.left = "117px";
 };
 
 fig1_1.addEventListener('mouseleave', removeInfoFunc);
 function removeInfoFunc(){
-	fig1_1.removeChild(div);
+    fig1_1.removeChild(div);
 };
 
 var text;
@@ -90,7 +90,7 @@ var result = document.getElementById('result');
 input.addEventListener('change', onChange);
 
 function onChange(){
-	text= input.value;
+    text= input.value;
    result.innerHTML = "Do you want to submit?: " + text;
 };
 
@@ -98,8 +98,8 @@ var fig6 = document.getElementById('fig6');
 fig6.addEventListener('click', submitFunc);
 
 function submitFunc(){
-	result.style.display = "none";
-	console.log(text);
+    result.style.display = "none";
+    console.log(text);
 }
 
 var draggable = document.getElementById('draggable');
@@ -109,11 +109,11 @@ draggable.addEventListener('mousedown', mousedownFunc);
 function mousedownFunc(event) {
     console.log('mousedown');
 
-	var initialX = event.pageX;
-	var initial_left = window.getComputedStyle(draggable,null).getPropertyValue("left");
+    var initialX = event.pageX;
+    var initial_left = window.getComputedStyle(draggable,null).getPropertyValue("left");
     var initial_width = window.getComputedStyle(progressBar,null).getPropertyValue("width");
 
-	moveAt(event);
+    moveAt(event);
 
     function moveAt(event) {
       var movedX = event.pageX;
@@ -122,7 +122,7 @@ function mousedownFunc(event) {
       var dif = initialX-movedX;
       draggable.style.left = parseInt(initial_left) - dif + 'px';
       progressBar.style.width = parseInt(initial_width) - dif + 'px';
-  	}
+    }
 
     document.addEventListener('mousemove', onmouseMove);
     function onmouseMove(event) {
@@ -132,7 +132,7 @@ function mousedownFunc(event) {
 
     document.addEventListener('mouseup', onmouseUp);
 
-  	function onmouseUp() {
+    function onmouseUp() {
         console.log('mouseup');
         document.removeEventListener('mousemove', onmouseMove);
         document.removeEventListener('mouseup', onmouseUp);
@@ -286,3 +286,78 @@ function moveSwitchIconFunc(){
 
     switch_icon.style.left = perc + '%';
 }
+
+var dot_white = document.getElementById("dot_white");
+
+dot_white.addEventListener('click', moveDotWhiteFunc);
+
+function moveDotWhiteFunc(){
+    if(dot_white.style.marginLeft == '17px'){
+        dot_white.style.marginLeft = '0px'
+    }
+    else {
+    dot_white.style.marginLeft = '17px';
+    }
+};
+
+var dot_yellow = document.getElementById("dot_yellow");
+
+dot_yellow.addEventListener('click', moveDotYellowFunc);
+
+function moveDotYellowFunc(){
+    if(dot_yellow.style.marginLeft == '17px'){
+        dot_yellow.style.marginLeft = '0px'
+    }
+    else {
+    dot_yellow.style.marginLeft = '17px';
+    }
+};
+
+var draggable2 = document.getElementById('draggable2');
+
+draggable2.addEventListener("mouseup", mouseUp);
+draggable2.addEventListener("mousedown", mouseDown);
+
+function mouseUp()
+{
+    window.removeEventListener('mousemove', divMove);
+}
+
+function mouseDown(e){
+  window.addEventListener('mousemove', divMove);
+}
+
+function divMove(e){
+    var div = document.getElementById('draggable2');
+    div.style.position = 'absolute';
+    div.style.top = e.clientY + 'px';
+    div.style.left = e.clientX + 'px';
+}
+
+var divShown = document.getElementsByClassName('notShown')[0];
+var menuLi1 = document.getElementsByClassName('menuLi')[0];
+menuLi1.addEventListener('contextmenu', contextMenuFunc);
+
+function contextMenuFunc(e){
+    e.preventDefault();
+    divShown.classList.toggle('shown');
+};
+
+var star_yellow = document.querySelectorAll(".star_yellow");
+
+star_yellow.forEach(function(item, index){
+    star_yellow[index].onclick = function toggleClassFunc(){
+        this.classList.toggle('star_black');
+        this.classList.toggle('star_yellow');
+    }
+});
+
+var star_black = document.querySelectorAll(".star_black");
+
+star_black.forEach(function(item, index){
+    star_black[index].onclick = function toggleClassFunc(){
+        this.classList.toggle('star_yellow');
+        this.classList.toggle('star_black');
+    }
+});
+
