@@ -328,6 +328,22 @@ function moveDotYellowFunc(){
 };
 
 var draggable2 = document.getElementById('draggable2');
+var progressBar2 = document.getElementById('progressBar2');
+
+var range_swith_icon3 = document.getElementById('range_swith_icon3');
+var draggable2 = document.getElementById('draggable2');
+range_swith_icon3.addEventListener('input', moveDraggableFunc2);
+var initial_left_draggable2 = window.getComputedStyle(draggable2,null).getPropertyValue("left");
+var max_draggable2 = 250;
+
+function moveDraggableFunc2(){
+    var tracking = range_swith_icon3.value;
+
+    var perc = tracking * 100 / max_draggable2;
+
+    draggable2.style.left = perc + '%';
+    progressBar2.style.width = perc + '%';
+}
 
 
 
