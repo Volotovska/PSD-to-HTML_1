@@ -104,40 +104,54 @@ function submitFunc(){
 
 var draggable = document.getElementById('draggable');
 var progressBar = document.getElementById('progressBar');
-draggable.addEventListener('mousedown', mousedownFunc);
 
-function mousedownFunc(event) {
-    console.log('mousedown');
+var range_swith_icon2 = document.getElementById('range_swith_icon2');
+var draggable = document.getElementById('draggable');
+range_swith_icon2.addEventListener('input', moveDraggableFunc);
+var initial_left_draggable = window.getComputedStyle(draggable,null).getPropertyValue("left");
+var max_draggable = 250;
 
-    var initialX = event.pageX;
-    var initial_left = window.getComputedStyle(draggable,null).getPropertyValue("left");
-    var initial_width = window.getComputedStyle(progressBar,null).getPropertyValue("width");
+function moveDraggableFunc(){
+    var tracking = range_swith_icon2.value;
 
-    moveAt(event);
+    var perc = tracking * 100 / max_draggable;
 
-    function moveAt(event) {
-      var movedX = event.pageX;
-      // console.log(movedX);
-      if(movedX < 754 && movedX > 607)
-      var dif = initialX-movedX;
-      draggable.style.left = parseInt(initial_left) - dif + 'px';
-      progressBar.style.width = parseInt(initial_width) - dif + 'px';
-    }
+    draggable.style.left = perc + '%';
+    progressBar.style.width = perc + '%';
+}
 
-    document.addEventListener('mousemove', onmouseMove);
-    function onmouseMove(event) {
-        console.log('mousemove');
-        moveAt(event);
-    }
+// function mousedownFunc(event) {
+//     console.log('mousedown');
 
-    document.addEventListener('mouseup', onmouseUp);
+//     var initialX = event.pageX;
+//     var initial_left = window.getComputedStyle(draggable,null).getPropertyValue("left");
+//     var initial_width = window.getComputedStyle(progressBar,null).getPropertyValue("width");
 
-    function onmouseUp() {
-        console.log('mouseup');
-        document.removeEventListener('mousemove', onmouseMove);
-        document.removeEventListener('mouseup', onmouseUp);
-    }
-};
+//     moveAt(event);
+
+//     function moveAt(event) {
+//       var movedX = event.pageX;
+//       // console.log(movedX);
+//       if(movedX < 754 && movedX > 607)
+//       var dif = initialX-movedX;
+//       draggable.style.left = parseInt(initial_left) - dif + 'px';
+//       progressBar.style.width = parseInt(initial_width) - dif + 'px';
+//     }
+
+//     document.addEventListener('mousemove', onmouseMove);
+//     function onmouseMove(event) {
+//         console.log('mousemove');
+//         moveAt(event);
+//     }
+
+//     document.addEventListener('mouseup', onmouseUp);
+
+//     function onmouseUp() {
+//         console.log('mouseup');
+//         document.removeEventListener('mousemove', onmouseMove);
+//         document.removeEventListener('mouseup', onmouseUp);
+//     }
+// };
 
 var counter = 1;
 
@@ -315,24 +329,7 @@ function moveDotYellowFunc(){
 
 var draggable2 = document.getElementById('draggable2');
 
-draggable2.addEventListener("mouseup", mouseUp);
-draggable2.addEventListener("mousedown", mouseDown);
 
-function mouseUp()
-{
-    window.removeEventListener('mousemove', divMove);
-}
-
-function mouseDown(e){
-  window.addEventListener('mousemove', divMove);
-}
-
-function divMove(e){
-    var div = document.getElementById('draggable2');
-    div.style.position = 'absolute';
-    div.style.top = e.clientY + 'px';
-    div.style.left = e.clientX + 'px';
-}
 
 var divShown = document.getElementsByClassName('notShown')[0];
 var menuLi1 = document.getElementsByClassName('menuLi')[0];
