@@ -309,59 +309,112 @@ li{
 	background: url(../img/percentage.png) no-repeat center / cover;
 }
 #loadingBar{
-	width: 157px;
-	height: 14px;
-	margin-top: 14px;
-	margin-left: 4px;
+	position: relative;
+	background: url(../img/loading_bar.png) no-repeat center / contain;
+	width: 100%;
+	height: 100%;
 }
 #progressBar{
-	width: 93px;
-	height: 9px;
+	width: 5px;
+	height: 8px;
 	position: absolute;
-	top: 176px;
-	left: 598px;
+	left: 3px;
+	top: 2px;
+	bottom: 2px;
+	background: url(../img/progressBar2.png) no-repeat center / cover;
 }
 #draggable{
-	width: 16px;
-	height: 16px;
-	position: absolute;
-	top: 173px;
-	left: 685px;
 	background: url(../img/dot_progress_bar.png) no-repeat center / contain;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	cursor: pointer;
+	transform: translateX(-10px);
+	padding: 0 10px;
+}
+#div_switch_draggable{
+	position: absolute;
+	left: 610px;
+	width: 131px;
+	height: 13px;
+	margin-top: 15px;
+	padding: 0;
+}
+#div_switch_draggable2{
+	position: absolute;
+	width: 48px;
+	height: 13px;
+	margin-top: 15px;
+	padding: 0;
+	left: 785px;
+}
+#range_swith_icon2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+#range_swith_icon3{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	opacity: 0;
+	cursor: pointer;
 }
 .clickerItem:hover{
 	background: #544c44;
 	cursor: pointer;
 }
 #loadingBar2{
-	background: url(../img/loading_bar2.png) no-repeat center / contain;
-	width: 56px;
-	height: 14px;
-	margin-top: 15px;
-	margin-left: 1px;
-	display:inline-block;
+	position: relative;
+	background: url(../img/loading_bar.png) no-repeat center / cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
 }
 #progressBar2{
-	background: url(../img/progressBar2.png) no-repeat center / contain;
-	width: 38px;
-	height: 10px;
+	width: 5px;
+	height: 8px;
 	position: absolute;
-	left: 788px;
-	top: 176px;
+	left: 3px;
+	top: 2px;
+	bottom: 2px;
+	background: url(../img/progressBar2.png) no-repeat center / cover;
 }
 #draggable2{
-	width: 16px;
-	height: 16px;
+	background: url(../img/dot_progress_bar.png) no-repeat center / contain;
+	width: 15px;
+	height: 15px;
 	position: absolute;
-	top: 173px;
-	left: 812px;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	cursor: pointer;
+	transform: translateX(-10px);
+	padding: 0 9px 0 5px;
 }
 #volumeIcon{
 	width: 11px;
 	height: 11px;
-	display:inline-block;
-	margin-left: 7px;
-	margin-bottom: 2px;
+	position: absolute;
+	margin-left: -30px;
+	margin-top: 15px;
 }
 .arithmetic{
 	width: 22px;
