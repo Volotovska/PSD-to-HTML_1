@@ -1,1 +1,1 @@
-# PSD-to-HTML
+Portfolio of work examples (markup from PSD into HTML-CSS-JS layout)
