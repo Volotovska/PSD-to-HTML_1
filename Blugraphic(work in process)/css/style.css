@@ -1,0 +1,45 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+section{
+	width: 1500px;
+	height: 566px;
+	background: #ffe6bd;
+}
+body{
+	margin: auto;
+	position: relative;
+	width: 1500px;
+	height: 1700px;
+}
+header{
+	padding-top: 70px;
+	padding-left: 280px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+}
+#menuBc{
+	background: url(../img/menu.png) no-repeat center / contain;
+	width: 938px;
+	height: 38px;
+}
+li a{
+	color: #c29032;
+	text-decoration: none;
+}
+li{
+	list-style: none;
+	display: inline;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+#menu{
+	padding-left: 130px;
+	padding-top: 7px;
+}
+li:first-child{
+	font-size: 16px;
+	margin-right: 42px;
+	text-transform: none;
+}
