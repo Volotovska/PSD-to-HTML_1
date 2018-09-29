@@ -5,7 +5,7 @@
 section{
 	width: 1500px;
 	height: 566px;
-	background: #ffe6bd;
+	background: url(../img/bg1.jpg) no-repeat center / contain;
 }
 body{
 	margin: auto;
@@ -23,23 +23,73 @@ header{
 	width: 938px;
 	height: 38px;
 }
-li a{
-	color: #c29032;
+.menuLi a{
+	color: #a17b53;
 	text-decoration: none;
 }
-li{
+.menuLi{
 	list-style: none;
 	display: inline;
-	font-size: 13px;
+	font-size: 10px;
 	text-transform: uppercase;
 	margin-right: 20px;
 }
 #menu{
-	padding-left: 130px;
+	padding-left: 115px;
 	padding-top: 7px;
 }
-li:first-child{
-	font-size: 16px;
-	margin-right: 42px;
+.menuLi:first-child{
+	font-size: 15px;
+	margin-right: 40px;
 	text-transform: none;
+}
+.menuLi:first-child a{
+	color: black;
+}
+.menuLi:last-child{
+	margin-left: 100px;
+}
+.menuLi:last-child a{
+	color: #c7b4a0;
+}
+#tagline{
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	padding-left: 115px;
+	font-size: 10px;
+	color: #c8a983;
+}
+#productsList{
+	display: none;
+}
+.menuLi:nth-child(5):hover #productsList{
+	display: block;
+	position: absolute;
+	left: 670px;
+	background: rgba(255,255,255,0.7);
+	width: 126px;
+	height: 166px;
+	padding-top: 16px;
+	padding-left: 12px;
+	border: 1px solid #b9b9b9;
+	border-radius: 5px;
+}
+.productLi{
+	list-style: none;
+	text-transform: none;
+	margin-bottom: 6px;
+}
+.productLi a{
+	color: #d9b172;
+	font-family: Calibri;
+}
+#sliderContainer{
+	display: flex;
+	margin-top: 50px;
+}
+#shapeLeft{
+	background: url(../img/shapeLeft.png) no-repeat center/contain;
+	width: 36px;
+	height: 118px;
+	padding-left: 700px;
+	margin-top: 85px;
 }
