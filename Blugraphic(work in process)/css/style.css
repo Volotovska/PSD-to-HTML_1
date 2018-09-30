@@ -32,22 +32,22 @@ header{
 	display: inline;
 	font-size: 10px;
 	text-transform: uppercase;
-	margin-right: 20px;
+	margin-right: 3%;
 }
 #menu{
 	padding-left: 115px;
 	padding-top: 7px;
 }
 .menuLi:first-child{
-	font-size: 15px;
+	font-size: 18px;
 	margin-right: 40px;
 	text-transform: none;
 }
 .menuLi:first-child a{
-	color: black;
+	color: #c08414;
 }
 .menuLi:last-child{
-	margin-left: 100px;
+	margin-left: 7%;
 }
 .menuLi:last-child a{
 	color: #c7b4a0;
@@ -125,4 +125,11 @@ header{
 	height: 118px;
 	margin-top: 85px;
 	margin-left: 110px;
+}
+#welcome{
+	font-size: 19px;
+	margin-left: 655px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	color: #c7b4a0;
+	margin-top: 30px;
 }
