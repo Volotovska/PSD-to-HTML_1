@@ -5,7 +5,7 @@
 section{
 	width: 1500px;
 	height: 566px;
-	background: url(../img/bg1.jpg) no-repeat center / contain;
+	background: url(../img/bg1.png) no-repeat center / contain;
 }
 body{
 	margin: auto;
@@ -85,11 +85,44 @@ header{
 #sliderContainer{
 	display: flex;
 	margin-top: 50px;
+	padding-left: 358px;
 }
 #shapeLeft{
 	background: url(../img/shapeLeft.png) no-repeat center/contain;
 	width: 36px;
 	height: 118px;
-	padding-left: 700px;
 	margin-top: 85px;
+}
+#smthSpecial{
+	width: 283px;
+	height: 230px;
+	margin-left: 80px;
+	margin-top: 13px;
+	background: url(../img/smthSpecial.png) no-repeat center / contain;
+}
+#cookies1{
+	width: 163px;
+	height: 230px;
+	margin-top: 10px;
+	margin-left: -7px;
+	background: url(../img/cookies1.png) no-repeat center / contain;
+}
+#ingredients{
+	margin-top: 74px;
+	color: #926a2c;
+	font-family: Calibri;
+	font-size: 12px;
+	margin-left: 20px;
+}
+.ingLi{
+	color: #d9b172;
+	font-family: Calibri;
+	font-size: 10px;
+}
+#shapeRight{
+	background: url(../img/shapeRight.png) no-repeat center/contain;
+	width: 36px;
+	height: 118px;
+	margin-top: 85px;
+	margin-left: 110px;
 }
