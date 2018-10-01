@@ -15,7 +15,7 @@ body{
 }
 header{
 	padding-top: 70px;
-	padding-left: 280px;
+	padding-left: 326px;
 	font-family: Brush Script MT, Brush Script Std, cursive;
 }
 #menuBc{
@@ -36,10 +36,10 @@ header{
 }
 #menu{
 	padding-left: 115px;
-	padding-top: 7px;
+	padding-top: 6px;
 }
 .menuLi:first-child{
-	font-size: 18px;
+	font-size: 19px;
 	margin-right: 40px;
 	text-transform: none;
 }
@@ -47,7 +47,7 @@ header{
 	color: #c08414;
 }
 .menuLi:last-child{
-	margin-left: 7%;
+	margin-left: 6%;
 }
 .menuLi:last-child a{
 	color: #c7b4a0;
@@ -55,7 +55,7 @@ header{
 #tagline{
 	font-family: Brush Script MT, Brush Script Std, cursive;
 	padding-left: 115px;
-	font-size: 10px;
+	font-size: 12px;
 	color: #c8a983;
 }
 #productsList{
@@ -85,7 +85,7 @@ header{
 #sliderContainer{
 	display: flex;
 	margin-top: 50px;
-	padding-left: 358px;
+	padding-left: 411px;
 }
 #shapeLeft{
 	background: url(../img/shapeLeft.png) no-repeat center/contain;
@@ -94,16 +94,16 @@ header{
 	margin-top: 85px;
 }
 #smthSpecial{
-	width: 283px;
+	width: 289px;
 	height: 230px;
 	margin-left: 80px;
 	margin-top: 13px;
 	background: url(../img/smthSpecial.png) no-repeat center / contain;
 }
 #cookies1{
-	width: 163px;
+	width: 168px;
 	height: 230px;
-	margin-top: 10px;
+	margin-top: 13px;
 	margin-left: -7px;
 	background: url(../img/cookies1.png) no-repeat center / contain;
 }
@@ -127,9 +127,27 @@ header{
 	margin-left: 110px;
 }
 #welcome{
-	font-size: 19px;
-	margin-left: 655px;
+	font-size: 20px;
+	text-align: center;
 	font-family: Brush Script MT, Brush Script Std, cursive;
 	color: #c7b4a0;
 	margin-top: 30px;
+}
+#leftPlus{
+	margin-left: 16px;
+	margin-top: 51px;
+	color: white;
+}
+#rightPlus{
+	margin-top: 48px;
+	margin-left: 12px;
+	color: white;
+}
+#textToWelcome{
+	font-family: Calibri;
+	padding-left: 115px;
+	font-size: 12px;
+	color: #c8a983;
+	text-align: center;
+	margin-top: 8px;
 }
