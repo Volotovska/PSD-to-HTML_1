@@ -3,7 +3,6 @@
 	padding: 0px;
 }
 #sectionFirst {
-	width: 1500px;
 	height: 439px;
 	background: #ffe6bd url(../img/bg1.jpg) no-repeat center / contain;
 }
@@ -11,20 +10,20 @@
 	background: #ffe6bd;
 }
 .content {
-    width: 1500px;
+    width: 940px;
     margin: auto;
 }
 header{
 	padding-top: 60px;
 	font-family: Brush Script MT, Brush Script Std, cursive;
 	background: #ffe6bd;
-	padding-left: 216px;
 	height: 60px;
 }
 #menuBc{
-	background: url(../img/menu.png) no-repeat center / contain;
-	width: 938px;
 	height: 40px;
+	background: #f7f7f7;
+	border-radius: 20px;
+	box-shadow: 0 0 1px grey;
 }
 .menuLi a{
 	color: #a17b53;
@@ -35,29 +34,42 @@ header{
 	display: inline;
 	font-size: 12px;
 	text-transform: uppercase;
-	margin-right: 3%;
 }
-#menu{
-	padding-left: 81px;
-	padding-top: 8px;
+#menu {
+	display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
 }
-.menuLi:first-child{
+.liSmallGroup{
+	overflow: hidden;
+	display: inline-block;
+	width: 665px;
+	white-space: nowrap;
+}
+.menuLiFirst{
 	font-size: 20px;
-	margin-right: 47px;
+	margin-right: 40px;
 	text-transform: none;
+	margin-left: 30px;
 }
-.menuLi:first-child a{
+.menuLiFirst a{
 	color: #c08414;
 }
-.menuLi:last-child{
-	margin-left: 20px;
+.liSmall:not(:last-child){
+	margin-right: 25px;
 }
-.menuLi:last-child a{
+.menuLiLast {
+	position: absolute;
+	right: 35px;
+}
+.menuLiLast a{
 	color: #c7b4a0;
 }
 #tagline{
 	font-family: Brush Script MT, Brush Script Std, cursive;
-	padding-left: 81px;
+	padding-left: 30px;
+	padding-top: 7px;
 	font-size: 12px;
 	color: #c8a983;
 }
@@ -86,26 +98,35 @@ header{
 	font-family: Calibri;
 }
 #sliderContainer{
-	display: flex;
-	padding-left: 281px;
-	padding-top: 30px;
+	position: relative;
+	margin-top: 30px;
 }
 #shapeLeft{
 	background: url(../img/shapeLeft.png) no-repeat center/contain;
 	width: 22px;
 	height: 112px;
-	margin-top: 138px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
 }
 #smthSpecial{
 	width: 656px;
 	height: 330px;
 }
 #ingredients{
-	margin-top: 74px;
 	color: #926a2c;
 	font-family: Calibri;
 	font-size: 14px;
-	margin-left: -35px;
+	position: absolute;
+	top: 0;
+	width: 240px;
+	right: 0;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 .ingLi{
 	color: #d9b172;
@@ -116,8 +137,11 @@ header{
 	background: url(../img/shapeRight.png) no-repeat center/contain;
 	width: 22px;
 	height: 100px;
-	margin-top: 138px;
-	margin-left: 84px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
 }
 #welcome{
 	font-size: 20px;
@@ -138,11 +162,10 @@ header{
 }
 #textToWelcome{
 	font-family: Calibri;
-	padding-left: 115px;
 	font-size: 12px;
 	color: #c8a983;
-	padding-left: 494px;
 	margin-top: 8px;
+	text-align: center;
 }
 section{
 	width: 1500px;
