@@ -168,7 +168,6 @@ header{
 	text-align: center;
 }
 section{
-	width: 1500px;
 	height: 999px;
 }
 footer{
@@ -177,7 +176,6 @@ footer{
 }
 #headerSection{
 	padding-top: 60px;
-	padding-left: 280px;
 	padding-bottom: 25px;
 }
 #headerSection1{
@@ -194,52 +192,33 @@ footer{
 	font-family: Calibri;
 }
 .picCreamsy{
-	width: 108px;
+	width: 155px;
 	height: 126px;
-	margin-right: 25px;
-	background: url(../img/creamsy1.png) no-repeat center / contain;
+	float: left;
+	background: url(../img/creamsy1.png) no-repeat bottom left;
 }
 #containerForPic{
-	display: flex;
-	width: 950px;
 	height: 146px;
-	padding-left: 280px;
 }
 .picCreamsy:nth-child(2){
-	width: 128px;
-	height: 82px;
-	margin-top: 43px;
-	background: url(../img/creamsy2.png) no-repeat center / contain;
+	background: url(../img/creamsy2.png) no-repeat bottom left;
 }
 .picCreamsy:nth-child(3){
-	width: 124px;
-	height: 97px;
-	margin-top: 36px;
-	background: url(../img/creamsy3.png) no-repeat center / contain;
+	background: url(../img/creamsy3.png) no-repeat bottom left;
 }
 .picCreamsy:nth-child(4){
-	width: 150px;
-	height: 90px;
-	margin-top: 41px;
-	background: url(../img/creamsy4.png) no-repeat center / contain;
+	background: url(../img/creamsy4.png) no-repeat bottom left;
 }
 .picCreamsy:nth-child(5){
-	width: 130px;
-	height: 105px;
-	margin-top: 25px;
-	background: url(../img/creamsy5.png) no-repeat center / contain;
+	background: url(../img/creamsy5.png) no-repeat bottom left;
 }
 .picCreamsy:nth-child(6){
-	width: 117px;
-	height: 102px;
-	margin-top: 18px;
-	background: url(../img/creamsy6.png) no-repeat center / contain;
+	background: url(../img/creamsy6.png) no-repeat bottom left;
 }
 #containerForName{
 	color: #946c42;
 	font-size: 14px;
 	display: flex;
-	padding-left: 280px;
 }
 .picName{
 	margin-right: 64px;
@@ -248,7 +227,6 @@ footer{
 	color: #946c42;
 	font-size: 10px;
 	display: flex;
-	padding-left: 280px;
 }
 .picDesc{
 	margin-right: 90px;
@@ -264,7 +242,6 @@ footer{
 	width: 940px;
 	height: 405px;
 	margin-top: 52px;
-	margin-left: 280px;
 	display: flex;
 }
 .headerPart{
