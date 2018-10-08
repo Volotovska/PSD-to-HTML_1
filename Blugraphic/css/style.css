@@ -249,11 +249,15 @@ footer{
 	margin-bottom: 15px;
 }
 .containerPart{
-	width: 430px;
+	width: 480px;
+	height: 410px;
+}
+.containerPart2{
+	width: 420px;
 	height: 410px;
 }
 .containerPart:first-child{
-	margin-right: 110px;
+	margin-right: 70px;
 }
 .linkText{
 	text-decoration: underline;
@@ -400,6 +404,7 @@ footer{
 	font-size: 12px;
 	padding: 10px;
 	border: 1px solid #dbc9ab;
+	padding-right: 100px;
 }
 .textPart5{
 	margin-bottom: 10px;
