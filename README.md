@@ -7,7 +7,4 @@ Finished works:
 1. Kit Ramotion
 2. Sticky (+JS vanilla)
 3. Sticky (+JQuery)
-
-Work in progress:
-
-1.Blugraphic
+4. Blugraphic
