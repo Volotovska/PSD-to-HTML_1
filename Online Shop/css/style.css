@@ -1,0 +1,387 @@
+input {
+	border: 0;
+	box-shadow: inset 0px 2px 8px 0px rgba(0, 0, 0, 0.35);
+}
+
+html, body, .main {
+	height: 100%;
+}
+
+.main {
+	padding-bottom: 220px;
+}
+
+.header {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 14px;
+	font-family: Arial;
+}
+
+@media (max-width: 767px) and (min-width: 576px)  {
+	.header {
+		display: none;
+	}
+
+	.infoContainer {
+		background: #05a300;
+	}
+
+	.infoContainer .info {
+		height: 45px;
+	}
+
+	.info .logo {
+		color: #fff;
+		font-size: 24px;
+	}
+
+	.info .searchMob {
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 55px;
+		margin: auto;
+		display: block;
+	}
+
+	.info .logo2 {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 15px;
+		margin: auto;
+		display: block;
+	}
+
+	.desc {
+		display: none;
+	}
+
+	.contact {
+		display: none;
+	}
+
+	.cart {
+		width: 33px;
+		height: 30px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+
+	.cart .cartIcon {
+		width: 33px;
+		height: 30px;
+	}
+
+	.actionsContainer {
+		display: none;
+	}
+
+	.main .additionalInfo {
+		display: block;
+	}
+
+	.main .footerInfo {
+		display: block;
+	}
+
+	.details {
+		display: none;
+	}
+	.arrow{
+		width: 60px;
+		height: 60px;
+		background: url('../img/arrow.png') no-repeat center / contain;
+	}
+	.footerText{
+		font-size: 18px;
+	}
+	.footerTextBold {
+		font-weight: bold;
+	}
+	.tel {
+		width: 520px;
+		height: 40px;
+		background: #05a300;
+		font-size: 22px;
+		color: white;
+	}
+	.telBl {
+		height: 90px;
+	}
+
+	.full {
+		font-size: 14px;
+		text-decoration: underline;
+	}
+
+	.fullBl {
+		height: 50px;
+		text-align: center;
+	}
+
+}
+
+.personIcon {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url('../img/person.png') no-repeat center / contain;
+}
+
+.personWelcome {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.info {
+	height: 100px;
+	position: relative;
+}
+
+.actions {
+	height: 45px;
+}
+
+.menu {
+	height: 50px;
+	color: #717070;
+	text-decoration: underline;
+}
+
+.username {
+	text-decoration: underline;
+}
+
+.logo {
+	color: #05a300;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.desc {
+	font-size: 15px;
+}
+
+.phoneIcon {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url('../img/phone.png') no-repeat center / contain;
+}
+
+.phone {
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+.searchMob {
+	display: none;
+	background: url('../img/search.png') no-repeat center / contain;
+}
+
+.logo2 {
+	display: none;
+	background: url('../img/logo2.png') no-repeat center / contain;
+}
+
+.additionalInfo{
+	display: none;
+}
+
+.footerInfo {
+	display: none;
+}
+
+.cartIcon {
+	width: 65px;
+	height: 55px;
+	background: url('../img/cart.png') no-repeat center / contain;
+}
+
+.catalogue {
+	height: 45px;
+	background: #05a300;
+	margin-left: -15px;
+}
+
+.catalogue > .row {
+	height: 100%;
+
+}
+
+.menuIcon {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url('../img/menu.png') no-repeat center / contain;
+    margin: 0 15px;
+}
+
+.menuName {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.inputSearch {
+	width: 620px;
+	height: 35px;
+}
+
+.searchPlace {
+	width: 620px;
+	height: 35px;
+	position: relative;
+}
+
+#searchIcon {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	background: url('../img/search.png') no-repeat center / contain;
+	position: absolute;
+	margin: auto;
+	bottom: 0;
+	top: 0;
+	right: 30px;
+}
+
+.footer {
+	position: absolute;
+	width: 100%;
+	height: 230px;
+	left: 0;
+	bottom: 0;
+}
+
+a {
+	text-decoration: underline;
+	font-size: 15px;
+}
+
+.name {
+	font-size: 18px;
+}
+
+.payment {
+	font-size: 15px;
+}
+
+.visaIcon {
+	width: 130px;
+	height: 50px;
+	background: url('../img/visa.png') no-repeat center / contain;
+}
+
+.mastercardIcon {
+	width: 90px;
+	height: 60px;
+	background: url('../img/mastercard.png') no-repeat center / contain;
+}
+
+.cards {
+	width: 250px;
+}
+
+.contacts {
+	font-size: 14px;
+}
+
+.contactsInfo{
+	padding: 20px 0 10px;
+}
+
+.item {
+	width: 220px;
+	height: 45px;
+	border-bottom: 1px solid #c1c1c1;
+	position: relative;
+}
+
+.point {
+	width: 10px;
+	height: 20px;
+	background: url('../img/point.png') no-repeat center / contain;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+
+.catalogueMenu {
+	display: none;
+	height: 270px;
+}
+
+.catalogue:hover .catalogueMenu {
+	display: block;
+}
+
+.conditioning {
+	width: 800px;
+	height: 66px;
+	border-bottom: 1px solid #cac9c9;
+	position: relative;
+}
+.goods{
+	width: 55px;
+	height: 55px;
+	vertical-align: middle;
+	background: url('../img/goods.png') no-repeat center / contain;
+}
+
+.menuInput {
+	height: 360px;
+}
+.available{
+	display: inline-block;
+	margin-right: 10px;
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+	background: url('../img/available.png') no-repeat center / contain;
+}
+.descCond{
+	padding: 0px;
+}
+
+.availableText {
+	color: #299126;
+	font-size: 15px;
+}
+.notAvailableText{
+	font-size: 15px;
+	color: grey;
+}
+.notAvailable{
+	display: inline-block;
+	margin-right: 10px;
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+	background: url('../img/notavailable.png') no-repeat center / contain;
+}
+.other {
+	height: 36px;
+}
+.link {
+	height: 20px;
+	border: none;
+}
+.menuInput{
+	display: none;
+}
