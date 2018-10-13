@@ -93,6 +93,10 @@ html, body, .main {
 		display: block;
 	}
 
+	.main #ClickToNumber {
+		display: block;
+	}
+
 	.details {
 		display: none;
 	}
@@ -100,6 +104,14 @@ html, body, .main {
 		width: 60px;
 		height: 60px;
 		background: url('../img/arrow.png') no-repeat center / contain;
+	}
+	#closeIcon{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40px;
+		height: 40px;
+		background: url('../img/closeIcon.png') no-repeat center / contain;
 	}
 	.footerText{
 		font-size: 18px;
@@ -127,7 +139,19 @@ html, body, .main {
 		height: 50px;
 		text-align: center;
 	}
+	
+	.closeBl {
+		position: relative;
+		height: 80px;
+	}
 
+}
+
+#ClickToNumber {
+	display: none;
+	width: 330px;
+	height: 200px;
+	background: grey;
 }
 
 .personIcon {
