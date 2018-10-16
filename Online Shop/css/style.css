@@ -9,6 +9,7 @@ html, body, .main {
 
 .main {
 	padding-bottom: 220px;
+	position: relative;
 }
 
 .header {
@@ -94,7 +95,7 @@ html, body, .main {
 	}
 
 	.main #ClickToNumber {
-		display: block;
+		display: none;
 	}
 
 	.details {
@@ -142,16 +143,40 @@ html, body, .main {
 	
 	.closeBl {
 		position: relative;
-		height: 80px;
+	}
+
+	.main .shown {
+		display: block;
+	}
+
+	.main .darkBg{
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background: url('../img/backgroundDark.png') no-repeat center/ cover;
+	}
+
+	.closeText {
+		font-size: 22px;
+		color: #3e77ad;
 	}
 
 }
 
+
 #ClickToNumber {
 	display: none;
 	width: 330px;
-	height: 200px;
-	background: grey;
+	height: 150px;
+	background: white;
+	position: absolute;
+	margin: auto;
+	right: 0;
+	left: 0;
+	z-index: 1;
+	top: 0;
+	bottom: 0px;
 }
 
 .personIcon {
