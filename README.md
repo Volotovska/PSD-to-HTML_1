@@ -8,3 +8,7 @@ Finished works:
 2. Sticky (+JS vanilla)
 3. Sticky (+JQuery)
 4. Blugraphic
+
+Work in process:
+
+1. Online shop
