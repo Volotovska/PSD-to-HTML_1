@@ -20,3 +20,17 @@
                 }
             }
         });
+
+var phoneMenu = document.getElementById('phoneMenu');        
+
+var clickToNumber = document.getElementById('ClickToNumber');
+
+var darkBg = document.getElementsByClassName('darkBg')[0];
+
+phoneMenu.addEventListener('click', showPhoneMenuFunc);
+
+function showPhoneMenuFunc(){
+    console.log("gg");
+    darkBg.classList.toggle('shown');
+    clickToNumber.classList.toggle('shown');
+}
