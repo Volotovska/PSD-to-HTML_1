@@ -30,7 +30,25 @@ var darkBg = document.getElementsByClassName('darkBg')[0];
 phoneMenu.addEventListener('click', showPhoneMenuFunc);
 
 function showPhoneMenuFunc(){
-    console.log("gg");
-    darkBg.classList.toggle('shown');
-    clickToNumber.classList.toggle('shown');
+    darkBg.classList.add('shown');
+    clickToNumber.classList.add('shown');
+}
+
+var closeIcon = document.getElementById('closeIcon');
+
+closeIcon.addEventListener('click', closePhoneMenuFunc);
+
+function closePhoneMenuFunc() {
+    darkBg.classList.remove('shown');
+    clickToNumber.classList.remove('shown');
+}
+
+var menuContainer = document.getElementById('menuContainer');
+
+var logo2 = document.getElementsByClassName('logo2')[0];
+
+logo2.addEventListener('click', showMenuFunc);
+
+function showMenuFunc() {
+   menuContainer.classList.add('shown');
 }
