@@ -52,3 +52,9 @@ logo2.addEventListener('click', showMenuFunc);
 function showMenuFunc() {
    menuContainer.classList.add('shown');
 }
+
+menuContainer.addEventListener('click', closeMenuFunc);
+
+function closeMenuFunc() {
+   menuContainer.classList.remove('shown');
+}

@@ -171,22 +171,29 @@ html, body, .main {
 		color: white;
 		padding: 15px 0 10px 15px;
 	}
-	.logoDesc{
+	.logoDesc {
 		background: #05a300;
 		font-size: 12px;
 		color: white;
-		height: 17px;
 		padding-left: 15px;
+	}
+
+	.personInfo {
+		font-size: 14px;
+		color: white;
+		background: #05a300;
+		padding-left: 15px;
+		padding-top: 10px;
+		padding-bottom: 15px;
 	}
 
 }
 
-#menuContainer{
+#menuContainer {
 	display: none;
 	position: absolute;
-	background: red;
+	background: white;
 	width: 300px;
-	height: 300px;
 	top: 0;
 	left: 0;
 	z-index: 1;
@@ -245,6 +252,8 @@ html, body, .main {
 
 .username {
 	text-decoration: underline;
+	display: inline-block;
+	margin-left: 5px;
 }
 
 .logo {
@@ -399,6 +408,13 @@ a {
 	position: relative;
 }
 
+.list {
+	width: 300px;
+	height: 45px;
+	border-bottom: 1px solid #c1c1c1;
+	position: relative;
+}
+
 .point {
 	width: 10px;
 	height: 20px;
@@ -408,6 +424,36 @@ a {
 	bottom: 0;
 	right: 0;
 	margin: auto;
+}
+
+.listIcon {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 15px;
+	margin: auto;
+	background: no-repeat bottom left / contain;
+}
+
+.addInfo{
+	height: 50px;
+	background: white;
+}
+
+.telephoneText {
+	color: white;
+	background: #05a300;
+	text-align: center;
+	font-size: 22px;
+}
+
+.fullSite {
+	cursor: pointer;
+	font-size: 12px;
+	text-decoration: underline;
+	text-align: center;
 }
 
 .catalogueMenu {
