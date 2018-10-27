@@ -26,6 +26,8 @@ html, body, .main {
 
 	.infoContainer {
 		background: #05a300;
+		position: relative;
+		z-index: 1;
 	}
 
 	.infoContainer .info {
@@ -185,6 +187,14 @@ html, body, .main {
 		padding-left: 15px;
 		padding-top: 10px;
 		padding-bottom: 15px;
+	}
+
+	.main .menuInputDev {
+		display: none;
+	}
+
+	.main .menuInput {
+		display: none;
 	}
 
 }
@@ -422,7 +432,7 @@ a {
 	position: absolute;
 	top:0;
 	bottom: 0;
-	right: 0;
+	right: 10px;
 	margin: auto;
 }
 
@@ -471,6 +481,15 @@ a {
 	border-bottom: 1px solid #cac9c9;
 	position: relative;
 }
+
+.conditioningDev {
+	width: 100%;
+	font-size: 15px;
+	position: relative;
+	height: 35px;
+	border-bottom: 1px solid #cac9c9;
+}
+
 .goods{
 	width: 55px;
 	height: 55px;
@@ -480,14 +499,26 @@ a {
 
 .menuInput {
 	height: 360px;
+	display: none;
+}
+.menuInputDev{
+	display: none;
+	font-size: 15px;
 }
 .available{
 	display: inline-block;
-	margin-right: 10px;
 	width: 22px;
 	height: 22px;
 	vertical-align: middle;
 	background: url('../img/available.png') no-repeat center / contain;
+}
+
+.availableDev {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
 }
 .descCond{
 	padding: 0px;
@@ -503,7 +534,6 @@ a {
 }
 .notAvailable{
 	display: inline-block;
-	margin-right: 10px;
 	width: 22px;
 	height: 22px;
 	vertical-align: middle;
@@ -516,6 +546,4 @@ a {
 	height: 20px;
 	border: none;
 }
-.menuInput{
-	display: none;
-}
+
