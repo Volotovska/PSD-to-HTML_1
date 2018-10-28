@@ -27,7 +27,6 @@ html, body, .main {
 	.infoContainer {
 		background: #05a300;
 		position: relative;
-		z-index: 1;
 	}
 
 	.infoContainer .info {
@@ -103,6 +102,19 @@ html, body, .main {
 	.details {
 		display: none;
 	}
+
+	#searchIconDev {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	background: url('../img/search.png') no-repeat center / contain;
+	position: absolute;
+	margin: auto;
+	bottom: 0;
+	top: 0;
+	right: 30px;
+	}
+
 	.arrow{
 		width: 60px;
 		height: 60px;
@@ -160,6 +172,10 @@ html, body, .main {
 		display: block;
 	}
 
+	.main .shown#searchField {
+		display: block;
+	}
+
 	.closeText {
 		font-size: 22px;
 		color: #3e77ad;
@@ -195,6 +211,38 @@ html, body, .main {
 
 	.main .menuInput {
 		display: none;
+	}
+
+	.main #searchField {
+		display: none;
+		position: absolute;
+		top: 0;
+		height: 80px;
+		width: 100%;
+		background: white;
+		z-index: 1;
+	}
+
+	.checkMark {
+	width: 20px;
+	height: 30px;
+	background: url('../img/checkMark.png') no-repeat center / contain;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	}
+
+	.search {
+	height: 66px;
+	border-bottom: 1px solid #cac9c9;
+	position: relative;
+	}
+
+	.searchText {
+		font-size: 24px;
+		color: #cac9c9;
 	}
 
 }
@@ -511,6 +559,10 @@ a {
 	height: 22px;
 	vertical-align: middle;
 	background: url('../img/available.png') no-repeat center / contain;
+}
+
+#searchField{
+	display: none;
 }
 
 .availableDev {

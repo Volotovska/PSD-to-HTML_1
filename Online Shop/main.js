@@ -60,3 +60,21 @@ function closeMenuFunc() {
    menuContainer.classList.remove('shown');
    darkBg.classList.remove('shown');
 }
+
+var searchMob = document.getElementsByClassName('searchMob')[0];
+
+var searchField = document.getElementById('searchField');
+
+searchMob.addEventListener('click', showSearchMenuF);
+
+function showSearchMenuF(){
+   searchField.classList.add('shown');
+   darkBg.classList.add('shown');
+}
+
+searchField.addEventListener('click', closeSearchMenuF);
+
+function closeSearchMenuF() {
+   searchField.classList.remove('shown');
+   darkBg.classList.remove('shown');
+}
