@@ -711,6 +711,13 @@ html, body, .main {
 		font-size: 24px;
 		color: #cac9c9;
 	}
+	.main .searchPlace2 {
+		display: none;
+	}
+
+	.main .inputSearch2 {
+		display: none;
+	}
 
 }
 
