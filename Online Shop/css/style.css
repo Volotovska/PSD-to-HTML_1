@@ -19,9 +19,17 @@ html, body, .main {
 	font-family: Arial;
 }
 
+.footerInfo2 {
+	display: none;
+}
+
 @media (max-width: 992px) and (min-width: 766px)  {
 	.header {
 		display: none;
+	}
+
+	.footerInfo{
+		display: block;
 	}
 
 	.infoContainer {
@@ -55,7 +63,7 @@ html, body, .main {
 		position: absolute;
 		top: 0;
 		bottom: 0;
-		left: 15px;
+		left: 10px;
 		margin: auto;
 		display: block;
 	}
@@ -81,6 +89,7 @@ html, body, .main {
 	.cart .cartIcon {
 		width: 33px;
 		height: 30px;
+		margin-right: 10px;
 	}
 
 	.actionsContainer {
@@ -92,7 +101,7 @@ html, body, .main {
 	}
 
 	.main .footerInfo {
-		display: block;
+		display: none;
 	}
 
 	.main #ClickToNumber {
@@ -244,6 +253,29 @@ html, body, .main {
 		font-size: 24px;
 		color: #cac9c9;
 	}
+	.main .inputSearch2 {
+		width: 310px;
+	}
+
+	.main .footerInfo2 {
+		display: block;
+	}
+
+	.pay1 {
+		display: inline-block;
+	}
+
+	.fullBl {
+		text-align: left;
+	}
+
+	.tel {
+		width: 350px;
+	}
+
+	.arrow {
+		margin-top: 20px;
+	}
 
 }
 
@@ -317,6 +349,10 @@ html, body, .main {
 
 	.main .additionalInfo {
 		display: block;
+	}
+
+	.main .footerInfo2 {
+		display: none;
 	}
 
 	.main .footerInfo {
@@ -511,6 +547,10 @@ html, body, .main {
 		right: 55px;
 		margin: auto;
 		display: block;
+	}
+
+	.main .footerInfo {
+		display: none;
 	}
 
 	.info .logo2 {
@@ -711,13 +751,6 @@ html, body, .main {
 		font-size: 24px;
 		color: #cac9c9;
 	}
-	.main .searchPlace2 {
-		display: none;
-	}
-
-	.main .inputSearch2 {
-		display: none;
-	}
 
 }
 
@@ -806,7 +839,6 @@ html, body, .main {
 	width: 20px;
 	height: 20px;
 	margin-right: 5px;
-	display: inline-block;
 	vertical-align: middle;
 	background: url('../img/phone.png') no-repeat center / contain;
 }
