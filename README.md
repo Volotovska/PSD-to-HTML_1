@@ -4,11 +4,8 @@ Portfolio of work examples (markup from PSD into HTML-CSS layout using JS/JQuery
 
 Finished works:
 
-1. Kit Ramotion
-2. Sticky (+JS vanilla)
-3. Sticky (+JQuery)
-4. Blugraphic
-
-Work in process:
-
-1. Online shop
+1.  Online shop (adaptive / cross-browser markup)
+2.  Blugraphic 
+3.  Sticky (+JS vanilla)
+4.  Sticky (+JQuery)
+5.  Kit Ramotion
