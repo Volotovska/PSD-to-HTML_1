@@ -108,6 +108,10 @@ html, body, .main {
 		display: none;
 	}
 
+	.empty{
+		height: 20px;
+	}
+
 	.details {
 		display: none;
 	}
@@ -259,6 +263,7 @@ html, body, .main {
 
 	.main .footerInfo2 {
 		display: block;
+		height: 330px;
 	}
 
 	.pay1 {
