@@ -43,7 +43,7 @@ header {
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	left: 785px;
+	right: 200px;
 }
 
 #searchIcon {
@@ -54,14 +54,14 @@ header {
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	left: 970px;
+	right: 213px;
 }
 
 .elipse {
 	width: 50px;
 	height: 50px;
 	background: url(../img/elipse.png) no-repeat center / contain;
-	left: 1050px;
+	right: 110px;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -69,11 +69,11 @@ header {
 
 }
 
-.lines {
+#menu {
 	width: 20px;
 	height: 20px;
 	background: url(../img/lines.png) no-repeat center / contain;
-	left: 1065px;
+	right: 124px;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -86,6 +86,7 @@ header {
 	height: 520px;
 	background: #99b9de;
 	margin: auto;
+	position: relative;
 }
 
 .headerPart1 {
@@ -95,4 +96,70 @@ header {
 	padding-top: 50px;
 	text-align: center;
 
+}
+
+#switcher1 {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background: url(../img/switcher1.png) no-repeat center / contain;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 90px;
+}
+
+#switcher2 {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background: url(../img/switcher2.png) no-repeat center / contain;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 90px;
+}
+
+#playButton {
+	position: absolute;
+	width: 110px;
+	height: 110px;
+	background: url(../img/playButton.png) no-repeat center / contain;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.photo1 {
+	position: absolute;
+	width: 540px;
+	height: 335px;
+	background: url(../img/photo1.png) no-repeat center / contain;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.textBg1 {
+	position: absolute;
+	width: 540px;
+	height: 65px;
+	background: url(../img/textBg1.png) no-repeat center / cover;
+	bottom: 0;
+	z-index: 1;
+	font-family: Roboto;
+	color: white;
+	font-size: 16px;
+	padding: 15px;
+}
+
+.smFont {
+	margin-top: 5px;
+	font-size: 10px;
 }
