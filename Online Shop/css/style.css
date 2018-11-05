@@ -19,753 +19,25 @@ html, body, .main {
 	font-family: Arial;
 }
 
+.work {
+	font-size: 15px;
+}
+
 .footerInfo2 {
 	display: none;
 }
 
-@media (max-width: 992px) and (min-width: 766px)  {
-	.header {
-		display: none;
-	}
-
-	.footerInfo{
-		display: block;
-	}
-
-	.infoContainer {
-		background: #05a300;
-		position: relative;
-	}
-
-	.infoContainer .info {
-		height: 45px;
-	}
-
-	.info .logo {
-		color: #fff;
-		font-size: 24px;
-	}
-
-	.info .searchMob {
-		width: 24px;
-		height: 24px;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 55px;
-		margin: auto;
-		display: block;
-	}
-
-	.info .logo2 {
-		width: 30px;
-		height: 30px;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 10px;
-		margin: auto;
-		display: block;
-	}
-
-	.desc {
-		display: none;
-	}
-
-	.contact {
-		display: none;
-	}
-
-	.cart {
-		width: 33px;
-		height: 30px;
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		margin: auto;
-	}
-
-	.cart .cartIcon {
-		width: 33px;
-		height: 30px;
-		margin-right: 10px;
-	}
-
-	.actionsContainer {
-		display: none;
-	}
-
-	.main .additionalInfo {
-		display: block;
-	}
-
-	.main .footerInfo {
-		display: none;
-	}
-
-	.main #ClickToNumber {
-		display: none;
-	}
-
-	.empty{
-		height: 20px;
-	}
-
-	.details {
-		display: none;
-	}
-
-	#searchIconDev {
-	width: 30px;
-	height: 30px;
-	vertical-align: middle;
-	background: url('../img/search.png') no-repeat center / contain;
-	position: absolute;
-	margin: auto;
-	bottom: 0;
-	top: 0;
-	right: 30px;
-	}
-
-	.arrow{
-		width: 60px;
-		height: 60px;
-		background: url('../img/arrow.png') no-repeat center / contain;
-	}
-	#closeIcon{
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 40px;
-		height: 40px;
-		background: url('../img/closeIcon.png') no-repeat center / contain;
-	}
-	.footerText{
-		font-size: 18px;
-	}
-	.footerTextBold {
-		font-weight: bold;
-	}
-	.tel {
-		width: 520px;
-		height: 40px;
-		background: #05a300;
-		font-size: 22px;
-		color: white;
-	}
-	.telBl {
-		height: 90px;
-	}
-
-	.full {
-		font-size: 14px;
-		text-decoration: underline;
-	}
-
-	.fullBl {
-		height: 50px;
-		text-align: center;
-	}
-	
-	.closeBl {
-		position: relative;
-	}
-
-	.main .shown#ClickToNumber {
-		display: block;
-	}
-
-	.main .shown.darkBg {
-		display: block;
-	}
-
-
-	.main .shown#menuContainer {
-		display: block;
-	}
-
-	.main .shown#searchField {
-		display: block;
-	}
-
-	.closeText {
-		font-size: 22px;
-		color: #3e77ad;
-	}
-
-	.logoR {
-		height: 45px;
-		background: #05a300;
-		text-transform: capitalize;
-		font-size: 30px;
-		color: white;
-		padding: 15px 0 10px 15px;
-	}
-	.logoDesc {
-		background: #05a300;
-		font-size: 12px;
-		color: white;
-		padding-left: 15px;
-	}
-
-	.personInfo {
-		font-size: 14px;
-		color: white;
-		background: #05a300;
-		padding-left: 15px;
-		padding-top: 10px;
-		padding-bottom: 15px;
-	}
-
-	.main .menuInputDev {
-		display: none;
-	}
-
-	.main .menuInput {
-		display: none;
-	}
-
-	.main #searchField {
-		display: none;
-		position: absolute;
-		top: 0;
-		height: 80px;
-		width: 100%;
-		background: white;
-		z-index: 1;
-	}
-
-	.checkMark {
-	width: 20px;
-	height: 30px;
-	background: url('../img/checkMark.png') no-repeat center / contain;
-	position: absolute;
-	top:0;
-	bottom: 0;
-	right: 0;
-	margin: auto;
-	}
-
-	.search {
-	height: 66px;
-	border-bottom: 1px solid #cac9c9;
-	position: relative;
-	}
-
-	.searchText {
-		font-size: 24px;
-		color: #cac9c9;
-	}
-	.main .inputSearch2 {
-		width: 310px;
-	}
-
-	.main .footerInfo2 {
-		display: block;
-		height: 330px;
-	}
-
-	.pay1 {
-		display: inline-block;
-	}
-
-	.fullBl {
-		text-align: left;
-	}
-
-	.tel {
-		width: 350px;
-	}
-
-	.arrow {
-		margin-top: 20px;
-	}
-
-}
-
-@media (max-width: 767px) and (min-width: 576px)  {
-	.header {
-		display: none;
-	}
-
-	.infoContainer {
-		background: #05a300;
-		position: relative;
-	}
-
-	.infoContainer .info {
-		height: 45px;
-	}
-
-	.info .logo {
-		color: #fff;
-		font-size: 24px;
-	}
-
-	.info .searchMob {
-		width: 24px;
-		height: 24px;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 55px;
-		margin: auto;
-		display: block;
-	}
-
-	.info .logo2 {
-		width: 30px;
-		height: 30px;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 15px;
-		margin: auto;
-		display: block;
-	}
-
-	.desc {
-		display: none;
-	}
-
-	.contact {
-		display: none;
-	}
-
-	.cart {
-		width: 33px;
-		height: 30px;
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		margin: auto;
-	}
-
-	.cart .cartIcon {
-		width: 33px;
-		height: 30px;
-	}
-
-	.actionsContainer {
-		display: none;
-	}
-
-	.main .additionalInfo {
-		display: block;
-	}
-
-	.main .footerInfo2 {
-		display: none;
-	}
-
-	.main .footerInfo {
-		display: block;
-	}
-
-	.main #ClickToNumber {
-		display: none;
-	}
-
-	.main .searchPlace2 {
-		display: none;
-	}
-
-	.main .inputSearch2 {
-		display: none;
-	}
-
-	.details {
-		display: none;
-	}
-
-	#searchIconDev {
-	width: 30px;
-	height: 30px;
-	vertical-align: middle;
-	background: url('../img/search.png') no-repeat center / contain;
-	position: absolute;
-	margin: auto;
-	bottom: 0;
-	top: 0;
-	right: 30px;
-	}
-
-	.arrow{
-		width: 60px;
-		height: 60px;
-		background: url('../img/arrow.png') no-repeat center / contain;
-	}
-	#closeIcon{
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 40px;
-		height: 40px;
-		background: url('../img/closeIcon.png') no-repeat center / contain;
-	}
-	.footerText{
-		font-size: 18px;
-	}
-	.footerTextBold {
-		font-weight: bold;
-	}
-	.tel {
-		width: 520px;
-		height: 40px;
-		background: #05a300;
-		font-size: 22px;
-		color: white;
-	}
-	.telBl {
-		height: 90px;
-	}
-
-	.full {
-		font-size: 14px;
-		text-decoration: underline;
-	}
-
-	.fullBl {
-		height: 50px;
-		text-align: center;
-	}
-	
-	.closeBl {
-		position: relative;
-	}
-
-	.main .shown#ClickToNumber {
-		display: block;
-	}
-
-	.main .shown.darkBg {
-		display: block;
-	}
-
-
-	.main .shown#menuContainer {
-		display: block;
-	}
-
-	.main .shown#searchField {
-		display: block;
-	}
-
-	.closeText {
-		font-size: 22px;
-		color: #3e77ad;
-	}
-
-	.logoR {
-		height: 45px;
-		background: #05a300;
-		text-transform: capitalize;
-		font-size: 30px;
-		color: white;
-		padding: 15px 0 10px 15px;
-	}
-	.logoDesc {
-		background: #05a300;
-		font-size: 12px;
-		color: white;
-		padding-left: 15px;
-	}
-
-	.personInfo {
-		font-size: 14px;
-		color: white;
-		background: #05a300;
-		padding-left: 15px;
-		padding-top: 10px;
-		padding-bottom: 15px;
-	}
-
-	.main .menuInputDev {
-		display: none;
-	}
-
-	.main .menuInput {
-		display: none;
-	}
-
-	.main #searchField {
-		display: none;
-		position: absolute;
-		top: 0;
-		height: 80px;
-		width: 100%;
-		background: white;
-		z-index: 1;
-	}
-
-	.checkMark {
-	width: 20px;
-	height: 30px;
-	background: url('../img/checkMark.png') no-repeat center / contain;
-	position: absolute;
-	top:0;
-	bottom: 0;
-	right: 0;
-	margin: auto;
-	}
-
-	.search {
-	height: 66px;
-	border-bottom: 1px solid #cac9c9;
-	position: relative;
-	}
-
-	.searchText {
-		font-size: 24px;
-		color: #cac9c9;
-	}
-
-}
-
-@media (max-width: 576px)  {
-	.header {
-		display: none;
-	}
-
-	.infoContainer {
-		background: #05a300;
-		position: relative;
-	}
-
-	.infoContainer .info {
-		height: 45px;
-	}
-
-	.info .logo {
-		color: #fff;
-		font-size: 24px;
-	}
-
-	.info .searchMob {
-		width: 24px;
-		height: 24px;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 55px;
-		margin: auto;
-		display: block;
-	}
-
-	.main .footerInfo {
-		display: none;
-	}
-
-	.info .logo2 {
-		width: 30px;
-		height: 30px;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 15px;
-		margin: auto;
-		display: block;
-	}
-
-	.desc {
-		display: none;
-	}
-
-	.contact {
-		display: none;
-	}
-
-	.cart {
-		width: 33px;
-		height: 30px;
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		margin: auto;
-	}
-
-	.cart .cartIcon {
-		width: 33px;
-		height: 30px;
-	}
-
-	.actionsContainer {
-		display: none;
-	}
-
-	.main .additionalInfo {
-		display: block;
-	}
-
-	.main .footerInfo {
-		display: block;
-	}
-
-	.main #ClickToNumber {
-		display: none;
-	}
-
-	.details {
-		display: none;
-	}
-
-	#searchIconDev {
-	width: 30px;
-	height: 30px;
-	vertical-align: middle;
-	background: url('../img/search.png') no-repeat center / contain;
-	position: absolute;
-	margin: auto;
-	bottom: 0;
-	top: 0;
-	right: 30px;
-	}
-
-	.arrow{
-		width: 60px;
-		height: 60px;
-		background: url('../img/arrow.png') no-repeat center / contain;
-	}
-	#closeIcon{
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 40px;
-		height: 40px;
-		background: url('../img/closeIcon.png') no-repeat center / contain;
-	}
-	.footerText{
-		font-size: 18px;
-	}
-	.footerTextBold {
-		font-weight: bold;
-	}
-	.tel {
-		width: 520px;
-		height: 40px;
-		background: #05a300;
-		font-size: 22px;
-		color: white;
-	}
-	.telBl {
-		height: 90px;
-	}
-
-	.full {
-		font-size: 14px;
-		text-decoration: underline;
-	}
-
-	.fullBl {
-		height: 50px;
-		text-align: center;
-	}
-	
-	.closeBl {
-		position: relative;
-	}
-
-	.main .shown#ClickToNumber {
-		display: block;
-	}
-
-	.main .shown.darkBg {
-		display: block;
-	}
-
-
-	.main .shown#menuContainer {
-		display: block;
-	}
-
-	.main .shown#searchField {
-		display: block;
-	}
-
-	.closeText {
-		font-size: 22px;
-		color: #3e77ad;
-	}
-
-	.logoR {
-		height: 45px;
-		background: #05a300;
-		text-transform: capitalize;
-		font-size: 30px;
-		color: white;
-		padding: 15px 0 10px 15px;
-	}
-	.logoDesc {
-		background: #05a300;
-		font-size: 12px;
-		color: white;
-		padding-left: 15px;
-	}
-
-	.personInfo {
-		font-size: 14px;
-		color: white;
-		background: #05a300;
-		padding-left: 15px;
-		padding-top: 10px;
-		padding-bottom: 15px;
-	}
-
-	.main .menuInputDev {
-		display: none;
-	}
-
-	.main .menuInput {
-		display: none;
-	}
-
-	.main #searchField {
-		display: none;
-		position: absolute;
-		top: 0;
-		height: 80px;
-		width: 100%;
-		background: white;
-		z-index: 1;
-	}
-
-	.main .phoneIcon {
-		display: none;
-	}
-	.checkMark {
-	width: 20px;
-	height: 30px;
-	background: url('../img/checkMark.png') no-repeat center / contain;
-	position: absolute;
-	top:0;
-	bottom: 0;
-	right: 0;
-	margin: auto;
-	}
-
-	.search {
-	height: 66px;
-	border-bottom: 1px solid #cac9c9;
-	position: relative;
-	}
-
-	.searchText {
-		font-size: 24px;
-		color: #cac9c9;
-	}
-
+.searchPlace2 {
+	display: none;
 }
 
 #menuContainer {
 	display: none;
-	position: absolute;
-	background: white;
 	width: 300px;
 	top: 0;
 	left: 0;
+	position: absolute;
+	background: white;
 	z-index: 1;
 }
 
@@ -844,6 +116,7 @@ html, body, .main {
 	width: 20px;
 	height: 20px;
 	margin-right: 5px;
+	display: inline-block;
 	vertical-align: middle;
 	background: url('../img/phone.png') no-repeat center / contain;
 }
@@ -1025,13 +298,16 @@ a {
 	text-align: center;
 }
 
-.catalogueMenu {
+.main .catalogueMenu {
 	display: none;
-	height: 270px;
 }
 
 .catalogue:hover .catalogueMenu {
 	display: block;
+	height: 270px;
+	position: relative;
+	z-index: 1;
+	background: white;
 }
 
 .conditioning {
@@ -1049,7 +325,7 @@ a {
 	border-bottom: 1px solid #cac9c9;
 }
 
-.goods{
+.goods {
 	width: 55px;
 	height: 55px;
 	vertical-align: middle;
@@ -1060,11 +336,12 @@ a {
 	height: 360px;
 	display: none;
 }
-.menuInputDev{
+.menuInputDev {
 	display: none;
 	font-size: 15px;
 }
-.available{
+
+.available {
 	display: inline-block;
 	width: 22px;
 	height: 22px;
@@ -1072,7 +349,7 @@ a {
 	background: url('../img/available.png') no-repeat center / contain;
 }
 
-#searchField{
+#searchField {
 	display: none;
 }
 
@@ -1083,7 +360,7 @@ a {
 	bottom: 0;
 	right: 0;
 }
-.descCond{
+.descCond {
 	padding: 0px;
 }
 
@@ -1091,22 +368,824 @@ a {
 	color: #299126;
 	font-size: 15px;
 }
-.notAvailableText{
+.notAvailableText {
 	font-size: 15px;
 	color: grey;
 }
-.notAvailable{
+
+.notAvailable {
 	display: inline-block;
 	width: 22px;
 	height: 22px;
 	vertical-align: middle;
 	background: url('../img/notavailable.png') no-repeat center / contain;
 }
+
 .other {
 	height: 36px;
 }
+
 .link {
 	height: 20px;
 	border: none;
 }
 
+@media (max-width: 992px) and (min-width: 766px)  {
+	.header {
+		display: none;
+	}
+
+	#phoneMenu {
+		display: inline-block;
+	}
+
+	.footerInfo {
+		display: block;
+	}
+
+	.infoContainer {
+		background: #05a300;
+		position: relative;
+	}
+
+	.infoContainer .info {
+		height: 45px;
+	}
+
+	.info .logo {
+		color: #fff;
+		font-size: 24px;
+	}
+
+	.info .searchMob {
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 55px;
+		margin: auto;
+		display: block;
+	}
+
+	.info .logo2 {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 10px;
+		margin: auto;
+		display: block;
+	}
+
+	.desc {
+		display: none;
+	}
+
+	.contact {
+		display: none;
+	}
+
+	.cart {
+		width: 33px;
+		height: 30px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+
+	.cart .cartIcon {
+		width: 33px;
+		height: 30px;
+	}
+
+	.actionsContainer {
+		display: none;
+	}
+
+	.main .additionalInfo {
+		display: block;
+	}
+
+	.main .footerInfo {
+		display: none;
+	}
+
+	.main #ClickToNumber {
+		display: none;
+	}
+
+	.empty{
+		height: 20px;
+	}
+
+	.details {
+		display: none;
+	}
+
+	#searchIconDev {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	background: url('../img/search.png') no-repeat center / contain;
+	position: absolute;
+	margin: auto;
+	bottom: 0;
+	top: 0;
+	right: 30px;
+	}
+
+	.arrow {
+		width: 60px;
+		height: 60px;
+		background: url('../img/arrow.png') no-repeat center / contain;
+	}
+
+	#closeIcon {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40px;
+		height: 40px;
+		background: url('../img/closeIcon.png') no-repeat center / contain;
+	} 
+	.footerText {
+		font-size: 18px;
+	}
+
+	.footerTextBold {
+		font-weight: bold;
+	}
+
+	.tel {
+		width: 520px;
+		height: 40px;
+		background: #05a300;
+		font-size: 22px;
+		color: white;
+	}
+
+	.telBl {
+		height: 90px;
+	}
+
+	.full {
+		font-size: 14px;
+		text-decoration: underline;
+	}
+
+	.fullBl {
+		height: 50px;
+		text-align: center;
+	}
+	
+	.closeBl {
+		position: relative;
+	}
+
+	.main .shown#ClickToNumber {
+		display: block;
+	}
+
+	.main .shown.darkBg {
+		display: block;
+	}
+
+	.main .shown#menuContainer {
+		display: block;
+	}
+
+	.main .shown#searchField {
+		display: block;
+	}
+
+	.closeText {
+		font-size: 22px;
+		color: #3e77ad;
+	}
+
+	.logoR {
+		height: 45px;
+		background: #05a300;
+		text-transform: capitalize;
+		font-size: 30px;
+		color: white;
+		padding: 15px 0 10px 15px;
+	}
+	.logoDesc {
+		background: #05a300;
+		font-size: 12px;
+		color: white;
+		padding-left: 15px;
+	}
+
+	.personInfo {
+		font-size: 14px;
+		color: white;
+		background: #05a300;
+		padding-left: 15px;
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+
+	.main .menuInputDev {
+		display: none;
+	}
+
+	.main .menuInput {
+		display: none;
+	}
+
+	.main #searchField {
+		display: none;
+		position: absolute;
+		top: 0;
+		height: 80px;
+		width: 100%;
+		background: white;
+		z-index: 1;
+	}
+
+	.checkMark {
+	width: 20px;
+	height: 30px;
+	background: url('../img/checkMark.png') no-repeat center / contain;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	}
+
+	.search {
+	height: 66px;
+	border-bottom: 1px solid #cac9c9;
+	position: relative;
+	}
+
+	.searchText {
+		font-size: 24px;
+		color: #cac9c9;
+	}
+	.main .inputSearch2 {
+		width: 310px;
+	}
+
+	.main .footerInfo2 {
+		display: block;
+		height: 330px;
+	}
+
+	.pay1 {
+		display: inline-block;
+	}
+
+	.fullBl {
+		text-align: left;
+	}
+
+	.tel {
+		width: 350px;
+	}
+
+	.arrow {
+		margin-top: 20px;
+	}
+	.main .searchPlace2 {
+		display: block;
+	}
+
+}
+
+@media (max-width: 767px) and (min-width: 576px)  {
+	.header {
+		display: none;
+	}
+
+	.main .phoneIcon {
+		display: none;
+	}
+
+	.infoContainer {
+		background: #05a300;
+		position: relative;
+	}
+
+	.infoContainer .info {
+		height: 45px;
+	}
+
+	.info .logo {
+		color: #fff;
+		font-size: 24px;
+	}
+
+	.info .searchMob {
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 55px;
+		margin: auto;
+		display: block;
+	}
+
+	.info .logo2 {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 15px;
+		margin: auto;
+		display: block;
+	}
+
+	.desc {
+		display: none;
+	}
+
+	.contact {
+		display: none;
+	}
+
+	.cart {
+		width: 33px;
+		height: 30px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+
+	.cart .cartIcon {
+		width: 33px;
+		height: 30px;
+	}
+
+	.actionsContainer {
+		display: none;
+	}
+
+	.main .additionalInfo {
+		display: block;
+	}
+
+	.main .footerInfo2 {
+		display: none;
+	}
+
+	.main .footerInfo {
+		display: block;
+	}
+
+	.main #ClickToNumber {
+		display: none;
+	}
+
+	.main .searchPlace2 {
+		display: none;
+	}
+
+	.main .inputSearch2 {
+		display: none;
+	}
+
+	.details {
+		display: none;
+	}
+
+	#searchIconDev {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	background: url('../img/search.png') no-repeat center / contain;
+	position: absolute;
+	margin: auto;
+	bottom: 0;
+	top: 0;
+	right: 30px;
+	}
+
+	.arrow {
+		width: 60px;
+		height: 60px;
+		background: url('../img/arrow.png') no-repeat center / contain;
+	}
+
+	#closeIcon {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40px;
+		height: 40px;
+		background: url('../img/closeIcon.png') no-repeat center / contain;
+	}
+
+	.footerText {
+		font-size: 18px;
+	}
+
+	.footerTextBold {
+		font-weight: bold;
+	}
+
+	.tel {
+		width: 520px;
+		height: 40px;
+		background: #05a300;
+		font-size: 22px;
+		color: white;
+	}
+
+	.telBl {
+		height: 90px;
+	}
+
+	.full {
+		font-size: 14px;
+		text-decoration: underline;
+	}
+
+	.fullBl {
+		height: 50px;
+		text-align: center;
+	}
+	
+	.closeBl {
+		position: relative;
+	}
+
+	.main .shown#ClickToNumber {
+		display: block;
+	}
+
+	.main .shown.darkBg {
+		display: block;
+	}
+
+
+	.main .shown#menuContainer {
+		display: block;
+	}
+
+	.main .shown#searchField {
+		display: block;
+	}
+
+	.closeText {
+		font-size: 22px;
+		color: #3e77ad;
+	}
+
+	.logoR {
+		height: 45px;
+		background: #05a300;
+		text-transform: capitalize;
+		font-size: 30px;
+		color: white;
+		padding: 15px 0 10px 15px;
+	}
+	.logoDesc {
+		background: #05a300;
+		font-size: 12px;
+		color: white;
+		padding-left: 15px;
+	}
+
+	.personInfo {
+		font-size: 14px;
+		color: white;
+		background: #05a300;
+		padding-left: 15px;
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+
+	.main .menuInputDev {
+		display: none;
+	}
+
+	.main .menuInput {
+		display: none;
+	}
+
+	.main #searchField {
+		display: none;
+		position: absolute;
+		top: 0;
+		height: 80px;
+		width: 100%;
+		background: white;
+		z-index: 1;
+	}
+
+	.checkMark {
+	width: 20px;
+	height: 30px;
+	background: url('../img/checkMark.png') no-repeat center / contain;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	}
+
+	.search {
+	height: 66px;
+	border-bottom: 1px solid #cac9c9;
+	position: relative;
+	}
+
+	.searchText {
+		font-size: 24px;
+		color: #cac9c9;
+	}
+
+}
+
+@media (max-width: 576px)  {
+
+	.main .visaIcon {
+		width: 90px;
+		height: 40px;
+	}
+
+	.main .mastercardIcon {
+		width: 70px;
+		height: 40px;
+	}
+
+	.main .selling {
+		padding: 5px;
+	}
+
+	.main .footerText {
+		font-size: 15px;
+	}
+
+	.main .additionalInfo2 {
+		font-size: 12px;
+	}
+
+	.workHours {
+		font-size: 10px;
+		padding: 0 40px;
+	}
+
+	.main .fullBl {
+		font-size: 12px;
+	}
+
+	.main .payment {
+		font-size: 14px;
+		width: 50px;
+	}
+
+	.main .contacts {
+		font-size: 12px;
+	}
+
+	.header {
+		display: none;
+	}
+
+	.infoContainer {
+		background: #05a300;
+		position: relative;
+	}
+
+	.infoContainer .info {
+		height: 45px;
+	}
+
+	.info .logo {
+		color: #fff;
+		font-size: 24px;
+	}
+
+	.info .searchMob {
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 55px;
+		margin: auto;
+		display: block;
+	}
+
+	.main .footerInfo {
+		display: none;
+	}
+
+	.info .logo2 {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 15px;
+		margin: auto;
+		display: block;
+	}
+
+	.desc {
+		display: none;
+	}
+
+	.contact {
+		display: none;
+	}
+
+	.cart {
+		width: 33px;
+		height: 30px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+
+	.cart .cartIcon {
+		width: 33px;
+		height: 30px;
+	}
+
+	.actionsContainer {
+		display: none;
+	}
+
+	.main .additionalInfo {
+		display: block;
+	}
+
+	.main .footerInfo {
+		display: block;
+	}
+
+	.main #ClickToNumber {
+		display: none;
+	}
+
+	.details {
+		display: none;
+	}
+
+	#searchIconDev {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	background: url('../img/search.png') no-repeat center / contain;
+	position: absolute;
+	margin: auto;
+	bottom: 0;
+	top: 0;
+	right: 30px;
+	}
+
+	.arrow {
+		width: 60px;
+		height: 60px;
+		background: url('../img/arrow.png') no-repeat center / contain;
+	}
+
+	#closeIcon {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40px;
+		height: 40px;
+		background: url('../img/closeIcon.png') no-repeat center / contain;
+	}
+
+	.footerText {
+		font-size: 18px;
+	}
+
+	.footerTextBold {
+		font-weight: bold;
+	}
+
+	.tel {
+		width: 520px;
+		height: 40px;
+		background: #05a300;
+		font-size: 22px;
+		color: white;
+	}
+
+	.telBl {
+		height: 90px;
+	}
+
+	.full {
+		font-size: 14px;
+		text-decoration: underline;
+	}
+
+	.fullBl {
+		height: 50px;
+		text-align: center;
+	}
+	
+	.closeBl {
+		position: relative;
+	}
+
+	.main .shown#ClickToNumber {
+		display: block;
+	}
+
+	.main .shown.darkBg {
+		display: block;
+	}
+
+
+	.main .shown#menuContainer {
+		display: block;
+	}
+
+	.main .shown#searchField {
+		display: block;
+	}
+
+	.closeText {
+		font-size: 22px;
+		color: #3e77ad;
+	}
+
+	.logoR {
+		height: 45px;
+		background: #05a300;
+		text-transform: capitalize;
+		font-size: 30px;
+		color: white;
+		padding: 15px 0 10px 15px;
+	}
+	.logoDesc {
+		background: #05a300;
+		font-size: 12px;
+		color: white;
+		padding-left: 15px;
+	}
+
+	.personInfo {
+		font-size: 14px;
+		color: white;
+		background: #05a300;
+		padding-left: 15px;
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+
+	.main .menuInputDev {
+		display: none;
+	}
+
+	.main .menuInput {
+		display: none;
+	}
+
+	.main #searchField {
+		display: none;
+		position: absolute;
+		top: 0;
+		height: 80px;
+		width: 100%;
+		background: white;
+		z-index: 1;
+	}
+
+	.main .phoneIcon {
+		display: none;
+	}
+
+	.checkMark {
+	width: 20px;
+	height: 30px;
+	background: url('../img/checkMark.png') no-repeat center / contain;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	}
+
+	.search {
+	height: 66px;
+	border-bottom: 1px solid #cac9c9;
+	position: relative;
+	}
+
+	.searchText {
+		font-size: 24px;
+		color: #cac9c9;
+	}
+}
