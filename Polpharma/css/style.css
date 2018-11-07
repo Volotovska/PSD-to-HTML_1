@@ -143,7 +143,7 @@ header {
 	bottom: 0;
 	right: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 3;
 }
 
 .textBg1 {
@@ -162,4 +162,124 @@ header {
 .smFont {
 	margin-top: 5px;
 	font-size: 10px;
+}
+
+.photo2 {
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	background: url(../img/photo2.png) no-repeat left / cover;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 200px;
+	z-index: 1;
+}
+
+.shadow2 {
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	background: rgb(143, 183, 225, 0.5);
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 200px;
+	z-index: 2;
+}
+
+
+.textBg2 {
+	position: absolute;
+	width: 400px;
+	height: 50px;
+	background: url(../img/textBg1.png) no-repeat center / cover;
+	bottom: 0;
+	z-index: 1;
+	font-family: Roboto;
+	color: white;
+	font-size: 11px;
+	padding: 10px;
+}
+
+.smFont2 {
+	margin-top: 3px;
+	font-size: 8px;
+}
+
+.photo3 {
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	background: url(../img/photo3.png) no-repeat left / cover;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 200px;
+	z-index: 1;
+}
+
+.shadow3 {
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	background: rgb(143, 183, 225, 0.5);
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 200px;
+	z-index: 2;
+}
+
+.part2 {
+	width: 1200px;
+	height: 100px;
+	background: #f4f4f4;
+	margin: auto;
+	position: relative;
+}
+
+.part2Text {
+	position: absolute;
+	top:0;
+	bottom: 0;
+	margin: auto;
+	left: 110px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #414770;
+	height: 20px;
+}
+
+#okButton {
+	width: 110px;
+	height: 40px;
+	background: #3c91ec;
+	color: white;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	margin: auto;
+	right: 110px;
+	padding-top: 12px;
+	text-align: center;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.part3 {
+	width: 1200px;
+	height: 800px;
+	background: #f4f4f4;
+	margin: auto;
+	position: relative;
+}
+
+.menu {
+	background: rgba(57, 64, 106, 0.8);
+	width: 100%;
+	height: 105px;
+	position: absolute;
+	top:0;
 }
