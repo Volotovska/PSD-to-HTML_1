@@ -25,10 +25,12 @@
 .pic {
 	width: 800px;
 	height: 800px;
-	background: url("../img/pic.jpg") no-repeat center / contain;
-    transition: background-position 3s ease-in-out;
+	background: url("../img/pic2.jpg") no-repeat center / contain;
+    /*transition: transform 5s ease;*/
+    transition: background 5s ease;
 }
 
 .pic:hover {
-    background-position: 0px -400px;
+    background-position: center -400px;
+    /*transform: translateY(calc(-100% + 400px));*/
 }
