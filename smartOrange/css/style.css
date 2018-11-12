@@ -1,0 +1,105 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Brandon Grotesque";
+	color: #ffffff;
+}
+
+header {
+	width: 1400px;
+	height: 620px;
+	background: url('../img/bg.png') no-repeat center / cover;
+	margin: auto;
+	position: relative;
+}
+
+.header1 {
+	font-size: 32px;
+	padding-top: 220px;
+	text-align: center;
+}
+
+.header2 {
+	font-size: 66px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.buttonLearn {
+	font-size: 23px;
+	width: 240px;
+	height: 60px;
+	border: 2px solid white;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 120px;
+	margin: auto;
+	padding-top: 15px;
+	text-align: center;
+}
+
+.main {
+	width: 1400px;
+	height: 800px;
+	background: #111111;
+	margin: auto;
+	position: relative;
+}
+
+.mainText1 {
+	padding-top: 90px;
+	text-align: center;
+	font-size: 60px;
+	letter-spacing: -1px;
+}
+
+.boldText{
+	font-weight: bold;
+}
+
+.mainText2 {
+	font-size: 22px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.container {
+	padding-top: 60px;
+	width: 820px;
+	height: 370px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: auto;
+	bottom: 190px;
+	display: flex;
+}
+
+.part1 {
+	width: 240px;
+}
+
+.circle {
+	border: 5px solid #ffffff;
+	width: 235px;
+	height: 235px;
+	border-radius: 50%;
+}
+
+.name {
+	font-size: 18px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.profession {
+	font-size: 16px;
+	text-align: center;
+	padding-top: 5px;
+}
