@@ -30,7 +30,7 @@ header {
 	padding-top: 30px;
 }
 
-.buttonLearn {
+#buttonLearn {
 	font-size: 23px;
 	width: 240px;
 	height: 60px;
@@ -42,6 +42,14 @@ header {
 	margin: auto;
 	padding-top: 15px;
 	text-align: center;
+}
+
+#buttonLearn:hover {
+	cursor: pointer;
+	font-size: 25px;
+	padding-top: 12px;
+	font-weight: bold;
+	border: 2px solid black;
 }
 
 .main {
@@ -89,6 +97,7 @@ header {
 	width: 235px;
 	height: 235px;
 	border-radius: 50%;
+	position: relative;
 }
 
 .name {
@@ -205,8 +214,7 @@ header {
 	background: white;
 	color: #cdcdcd;
 	font-size: 18px;
-	padding-left: 20px;
-	margin-bottom: 25px;
+	padding: 15px 20px;
 }
 
 .line {
@@ -223,4 +231,111 @@ header {
 .footer {
 	font-size: 16px;
 	text-align: center;
+}
+
+.avatar {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	background-image: url(../img/user.svg);
+}
+
+.avatar:hover{
+	background: url(../img/user2.svg);
+	cursor: pointer;
+}
+
+.moon {
+	background: url(../img/moon.png) no-repeat center/contain;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top:20px;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+@keyframes move {
+  40% {
+    left: 50%;
+    bottom: 85%;
+    animation-timing-function: ease-in;
+    }
+}
+
+.moon {
+  animation: move 45s infinite linear;
+  }
+
+@keyframes blink {
+90%{
+  opacity: 0.2;
+   }
+}
+
+.circle {
+  animation: blink 12s ease infinite;
+}
+
+@keyframes change {   
+  from {     
+    color: white;  
+  }   
+  to {
+    color: black;
+    background: white;
+   }
+}
+
+#buttonLearn {
+	animation: change 12s ease infinite;
+}
+
+.item:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.item:hover .pic2{
+	transform: scaleX(1.5) scaleY(1.5);
+}
+
+.pic:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+#modal {
+	width: 1400px;
+	height: 2060px;
+	margin: auto;
+	background: white;
+	display: none;
+	position: relative;
+}
+
+.cover .shown#modal{
+	display: block;
+}
+
+.closeButton {
+	height: 50px;
+	background: silver;
+	font-size: 24px;
+	cursor: pointer;
+	position: absolute;
+	top:0;
+	right: 0;
+}
+
+@media (max-width: 576px)  {
+	.cover .moon {
+		display: none;
+	}
 }
