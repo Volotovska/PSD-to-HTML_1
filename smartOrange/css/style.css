@@ -10,7 +10,6 @@ body {
 }
 
 header {
-	width: 1400px;
 	height: 620px;
 	background: url('../img/bg.png') no-repeat center / cover;
 	margin: auto;
@@ -53,7 +52,6 @@ header {
 }
 
 .main {
-	width: 1400px;
 	height: 800px;
 	background: #111111;
 	margin: auto;
@@ -133,7 +131,6 @@ header {
 }
 
 .form {
-	width: 1400px;
 	height: 640px;
 	background: #7690c5;
 	margin: auto;
@@ -312,7 +309,6 @@ header {
 }
 
 #modal {
-	width: 1400px;
 	height: 2060px;
 	margin: auto;
 	background: white;
@@ -334,8 +330,80 @@ header {
 	right: 0;
 }
 
-@media (max-width: 576px)  {
+.addInfo {
+	display: none;
+}
+
+.addInfo2 {
+	display: none;
+}
+
+.addInfo3 {
+	display: none;
+}
+
+@media (max-width: 767px) {
 	.cover .moon {
 		display: none;
 	}
+
+	.header2 {
+		font-size: 45px;
+	}
+
+	.header1 {
+		font-size: 22px;
+	}
+
+	.container {
+		display: none;
+	}
+
+	.addInfo {
+		font-size: 32px;
+		margin-top: 50px;
+		text-align: center;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.addInfo {
+		display: block;
+	}
+
+	.leftSide {
+		display: none;
+	}
+
+	.rightSide {
+		width: 200px;
+		margin-left: 20px;
+	}
+
+	.addInfo2{
+		display: block;
+		font-size: 32px;
+		position: absolute;
+		top: 10px;
+		left:20px;
+		margin: auto;
+	}
+
+	.addInfo3 {
+		display: block;
+		bottom: 120px;
+		left: 20px;
+		font-size: 32px;
+		margin-top: 50px;
+		text-align: center;
+		text-decoration: underline;
+		position: absolute;
+		cursor: pointer;
+	}
+
+	.footer {
+		margin-left: 20px;
+		text-align: left;
+	}
+		
 }
