@@ -573,6 +573,7 @@ footer {
 	height: 80px;
 	background: #161e50;
 	position: relative;
+	margin: auto;
 }
 
 .year {
@@ -596,4 +597,51 @@ footer {
 	bottom: 0;
 	margin: auto;
 	left: 110px;
+}
+
+#selector {
+	width: 430px;
+	height: 40px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left:0;
+	right: 0;
+	margin: auto;
+	display: flex;
+}
+
+.button1 {
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	padding-top: 14px;
+	font-size: 12px;
+	width: 150px;
+	height: 100%;
+	background: url(../img/button1.png) no-repeat center / contain;
+}
+
+.button2 {
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 14px;
+	font-size: 12px;
+	width: 140px;
+	height: 100%;
+	border: 1px solid #d9d9d9;
+	margin-left: -3px;
+	color: #4f5362;
+}
+
+.button3 {
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 14px;
+	font-size: 12px;
+	width: 150px;
+	height: 100%;
+	margin-left: -9px;
+	color: #4f5362;
+	background: url(../img/button3.png) no-repeat center / contain;
 }
