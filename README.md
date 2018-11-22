@@ -9,3 +9,4 @@ Finished works:
 3.  Sticky (+JS vanilla)
 4.  Sticky (+JQuery)
 5.  Kit Ramotion
+6.  SmartOrange (adaptive / cross-browser markup)
