@@ -291,12 +291,12 @@ header {
 	font-size: 12px;
 	border: 1px solid white;
 	padding-top: 12px;
-	margin-top: 32px;
 	margin-right: 20px;
 	display: inline-block;
 	border-radius: 20px;
 	text-align: center;
 	height: 40px;
+	padding: 12px 20px;
 }
 
 .menuB:hover{
@@ -305,25 +305,8 @@ header {
 	border: 1px solid #3b91eb;
 }
 
-.menuButton1 {
-	width: 95px;
-	margin-left: 225px;
-}
-
-.menuButton2 {
-	width: 110px;
-}
-
-.menuButton3 {
-	width: 100px;
-}
-
-.menuButton4 {
-	width: 105px;
-}
-
-.menuButton5 {
-	width: 150px;
+.placeForButtons {
+	padding: 32px 225px;
 }
 
 .menuButtonSp {
@@ -331,6 +314,7 @@ header {
 	width: 100px;
 	border: none;
 	background: #151d4c;
+	margin-right: 0px;
 }
 
 .videoGeneral{
@@ -338,6 +322,7 @@ header {
 	height: 260px;
 	position: relative;
 	z-index: 1;
+	margin-bottom: 35px;
 }
 
 .photo4 {
@@ -347,13 +332,12 @@ header {
 	top: 0;
 }
 
-
 .videoText {
 	height: 60px;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	padding: 10px 0;
+	padding: 15px 0 0;
 }
 
 .videoText1 {
@@ -370,7 +354,6 @@ header {
 	display: flex;
 	position: absolute;
 	width: 755px;
-	height: 260px;
 	margin: auto;
 	top: 50px;
 	right:0;
@@ -385,26 +368,17 @@ header {
 	margin-right: 30px;
 }
 
-.cont2 {
-	display: flex;
-	position: absolute;
-	width: 755px;
-	height: 260px;
-	margin: auto;
-	bottom: 190px;
-	right:0;
-	left:0;
-}
-
 #clicker {
 	width: 180px;
-	height: 61px;
+	height: 60px;
 	position: absolute;
 	bottom: 70px;
 	margin: auto;
 	right:0;
 	left:0;
 	display: flex;
+	border-radius: 30px;
+	overflow: hidden;
 }
 
 .base2 {
@@ -415,7 +389,8 @@ header {
 	left: 0;
 	margin: auto;
 	padding: 20px 25px;
-	color: #9b9b9c;
+	background: #f8f8f8;
+	color: #a1a1a2;
 }
 
 .base1 {
@@ -425,7 +400,8 @@ header {
 	left: 0;
 	margin: auto;
 	padding: 20px 25px;
-	color: #c3c3c4;
+	background: #ffffff;
+	color: #a1a1a2;
 }
 
 .base3 {
@@ -435,7 +411,8 @@ header {
 	right: 0;
 	margin: auto;
 	padding: 20px 25px;
-	color: #c3c3c4;
+	background: #eff7ff;
+	color: #79abe1;
 }
 
 .part4 {
@@ -609,6 +586,9 @@ footer {
 	right: 0;
 	margin: auto;
 	display: flex;
+	border-radius: 50px;
+	border: 1px solid #d9d9d9;
+	overflow: hidden;
 }
 
 .button1 {
@@ -619,7 +599,7 @@ footer {
 	font-size: 12px;
 	width: 150px;
 	height: 100%;
-	background: url(../img/button1.png) no-repeat center / contain;
+	background: #79ace2;
 }
 
 .button2 {
@@ -630,7 +610,6 @@ footer {
 	width: 140px;
 	height: 100%;
 	border: 1px solid #d9d9d9;
-	margin-left: -3px;
 	color: #4f5362;
 }
 
@@ -641,7 +620,6 @@ footer {
 	font-size: 12px;
 	width: 150px;
 	height: 100%;
-	margin-left: -9px;
 	color: #4f5362;
-	background: url(../img/button3.png) no-repeat center / contain;
 }
+
