@@ -11,7 +11,7 @@ body {
 
 header {
 	height: 620px;
-	background: url('../img/bg.png') no-repeat center / cover;
+	background: no-repeat center / cover;
 	margin: auto;
 	position: relative;
 }
@@ -253,16 +253,15 @@ header {
 	right: 0;
 	left: 0;
 	margin: auto;
-	background-image: url(../img/user.svg);
 
 	&:hover{
-		background: url(../img/user2.svg);
 		cursor: pointer;
+		transform: scale(1.5);
 	}
 }
 
 .moon {
-	background: url(../img/moon.png) no-repeat center/contain;
+	background: no-repeat center/contain;
 	width: 100px;
 	height: 100px;
 	position: absolute;
