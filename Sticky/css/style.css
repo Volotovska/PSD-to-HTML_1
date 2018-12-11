@@ -77,8 +77,8 @@ li a{
 	width: 16px;
 	height: 16px;
 	position: absolute;
-	top: 150px;
-	left: 429px;
+	top: 157px;
+	left: 415px;
 }
 #clicker{
 	border: 2px solid #24211e;
@@ -203,7 +203,7 @@ li a{
 .triangle{
 	width: 13px;
 	height: 13px;
-	margin-top: 10px;
+	margin-top: 7px;
 	margin-left: 12px;
 }
 .fig4{
@@ -224,8 +224,8 @@ li a{
 .icon{
 	width: 17px;
 	height: 17px;
-	margin-top: 8px;
-	margin-left: 12px;
+	margin-top: 6px;
+	margin-left: 10px;
 }
 .fig5{
 	margin-right: 0px;
@@ -464,7 +464,7 @@ li{
 	height: 9px;
 	position: absolute;
 	left: 418px;
-	top: 350px;
+	top: 352px;
 }
 #dots2{
 	width: 16px;
@@ -631,44 +631,44 @@ li{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 429px;
+	top: 431px;
     right: 305px;
 }
 #triangleUp2{
-	top: 431px;
+	top: 433px;
     right: 229px;
 }
 #triangleDown2{
-	top: 444px;
+	top: 446px;
     right: 229px;
 }
 #month{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 429px;
+	top: 431px;
     right: 248px;
 }
 #year1half{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 429px;
+	top: 431px;
     right: 192px;
 }
 #year2half{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 429px;
+	top: 431px;
     right: 158px;
 }
 #triangleUp3{
-	top: 431px;
+	top: 433px;
     right: 138px;
 }
 #triangleDown3{
-	top: 445px;
+	top: 446px;
     right: 138px;
 }
 #scrollbar{
@@ -684,7 +684,7 @@ li{
 	background: url(../img/handle.png) no-repeat center / contain;	
 	width: 265px;
 	position: absolute;
-	top: 494px;
+	top: 496px;
 	left: 340px;
 }
 #triangleLeft{
@@ -694,7 +694,7 @@ li{
 	border-width: 3px 6px 3px 0;
 	border-color: transparent white transparent transparent;
 	position: absolute;
-	top: 498px;
+	top: 500px;
 	left: 796px;
 	cursor: pointer;
 }
@@ -705,7 +705,7 @@ li{
 	border-width: 3px 0 3px 6px;
 	border-color: transparent transparent transparent white;
 	position: absolute;
-	top: 498px;
+	top: 500px;
 	left: 817px;
 	cursor: pointer;
 }
