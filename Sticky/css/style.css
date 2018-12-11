@@ -1,3 +1,8 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
 body{
 	background: rgb(202,202,202);
 }
@@ -17,20 +22,23 @@ body{
 	font-size: 12px;
 }
 header{
-	margin-top: 95px;
-	margin-left: 120px;
+	padding-top: 100px;
+	width: 740px;
+	margin: auto;
 }
 section{
 	display: flex;
 	flex-direction: column;
+	width: 740px;
+	margin: auto;
 }
 .container{
 	display: flex;
-	margin: 32px 113px 0px;
+	margin-top: 32px;
 }
 .menuLi{
 	width: 81px;
-	height: 26px;
+	height: 100%;
 	font-size: 14px;
 	list-style: none;
 	border-right: 1px solid #24211e;
@@ -76,7 +84,7 @@ li a{
 	border: 2px solid #24211e;
 	border-radius: 5px;
 	width: 295px;
-	height: 40px;
+	height: 100%;
 	display: inline-block;
 	margin-left: 20px;
 }
@@ -104,7 +112,7 @@ li a{
 	width: 169px;
 }
 .clickerItem:nth-child(3){
-	width: 86px;
+	width: 85px;
 }
 #clickerTriangle{
 	padding-top: 12px;
@@ -318,15 +326,15 @@ li{
 	width: 93px;
 	height: 9px;
 	position: absolute;
-	top: 176px;
-	left: 598px;
+	top: 181px;
+	left: 591px;
 }
 #draggable{
 	width: 16px;
 	height: 16px;
 	position: absolute;
-	top: 173px;
-	left: 685px;
+	top: 177px;
+	left: 673px;
 }
 .clickerItem:hover{
 	background: #544c44;
@@ -345,14 +353,14 @@ li{
 	width: 38px;
 	height: 10px;
 	position: absolute;
-	left: 788px;
-	top: 176px;
+	left: 778px;
+	top: 181px;
 }
 #draggable2{
 	width: 16px;
 	height: 16px;
 	position: absolute;
-	top: 173px;
+	top: 178px;
 	left: 812px;
 }
 #volumeIcon{
@@ -449,14 +457,14 @@ li{
 	left: 412px;
 	cursor: pointer;
 	z-index: 1;
-	top: 348px;
+	top: 345px;
 }
 #loadingBar3{
 	width: 76px;
 	height: 9px;
 	position: absolute;
 	left: 418px;
-	top: 354px;
+	top: 350px;
 }
 #dots2{
 	width: 16px;
@@ -465,7 +473,7 @@ li{
 	left: 488px;
 	z-index: 1;
 	cursor: pointer;
-	top: 348px;
+	top: 345px;
 }
 .container_item{
 	display: flex;
@@ -603,8 +611,8 @@ li{
 	cursor: pointer;
 }
 #triangleUp1{
-	top: 433px;
-    right: 283px;
+	top: 431px;
+    right: 285px;
 }
 .triangleDown{
 	width: 0;
@@ -616,52 +624,52 @@ li{
     cursor: pointer;
 }
 #triangleDown1{
-	top: 448px;
-    right: 283px;
+	top: 445px;
+    right: 285px;
 }
 #day{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 432px;
-    right: 302px;
+	top: 429px;
+    right: 305px;
 }
 #triangleUp2{
-	top: 434px;
-    right: 226px;
+	top: 431px;
+    right: 229px;
 }
 #triangleDown2{
-	top: 448px;
-    right: 226px;
+	top: 444px;
+    right: 229px;
 }
 #month{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 432px;
-    right: 247px;
+	top: 429px;
+    right: 248px;
 }
 #year1half{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 432px;
-    right: 190px;
+	top: 429px;
+    right: 192px;
 }
 #year2half{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 432px;
-    right: 156px;
+	top: 429px;
+    right: 158px;
 }
 #triangleUp3{
-	top: 434px;
-    right: 135px;
+	top: 431px;
+    right: 138px;
 }
 #triangleDown3{
-	top: 448px;
-    right: 135px;
+	top: 445px;
+    right: 138px;
 }
 #scrollbar{
 	height: 24px;
@@ -676,7 +684,7 @@ li{
 	background: url(../img/handle.png) no-repeat center / contain;	
 	width: 265px;
 	position: absolute;
-	top: 498px;
+	top: 494px;
 	left: 340px;
 }
 #triangleLeft{
@@ -686,8 +694,8 @@ li{
 	border-width: 3px 6px 3px 0;
 	border-color: transparent white transparent transparent;
 	position: absolute;
-	top: 502px;
-	left: 800px;
+	top: 498px;
+	left: 796px;
 	cursor: pointer;
 }
 #triangleRight{
@@ -697,8 +705,8 @@ li{
 	border-width: 3px 0 3px 6px;
 	border-color: transparent transparent transparent white;
 	position: absolute;
-	top: 502px;
-	left: 820px;
+	top: 498px;
+	left: 817px;
 	cursor: pointer;
 }
 #result{
