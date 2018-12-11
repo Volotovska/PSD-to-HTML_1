@@ -17,16 +17,19 @@ body{
 	font-size: 12px;
 }
 header{
+	width: 735px;
+	margin: auto;
 	padding-top: 95px;
-	margin-left: 120px;
 }
 section{
+	width: 735px;
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 }
 .container{
 	display: flex;
-	margin: 32px 113px 0px;
+	margin-top: 32px;
 }
 .menuLi{
 	width: 81px;
