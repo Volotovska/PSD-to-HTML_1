@@ -1,8 +1,3 @@
-*{
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-}
 body{
 	background: rgb(202,202,202);
 }
@@ -11,7 +6,7 @@ body{
 	width: 960px;
 	height: 600px;
 	margin: auto;
-	position: absolute;
+	position: relative;
 }
 #title{
 	color: #cfcfcf;
@@ -22,23 +17,20 @@ body{
 	font-size: 12px;
 }
 header{
-	padding-top: 100px;
-	width: 740px;
-	margin: auto;
+	padding-top: 95px;
+	margin-left: 120px;
 }
 section{
 	display: flex;
 	flex-direction: column;
-	width: 740px;
-	margin: auto;
 }
 .container{
 	display: flex;
-	margin-top: 32px;
+	margin: 32px 113px 0px;
 }
 .menuLi{
 	width: 81px;
-	height: 100%;
+	height: 26px;
 	font-size: 14px;
 	list-style: none;
 	border-right: 1px solid #24211e;
@@ -77,14 +69,14 @@ li a{
 	width: 16px;
 	height: 16px;
 	position: absolute;
-	top: 157px;
-	left: 415px;
+	top: 150px;
+	left: 429px;
 }
 #clicker{
 	border: 2px solid #24211e;
 	border-radius: 5px;
 	width: 295px;
-	height: 100%;
+	height: 40px;
 	display: inline-block;
 	margin-left: 20px;
 }
@@ -112,7 +104,7 @@ li a{
 	width: 169px;
 }
 .clickerItem:nth-child(3){
-	width: 85px;
+	width: 86px;
 }
 #clickerTriangle{
 	padding-top: 12px;
@@ -203,7 +195,7 @@ li a{
 .triangle{
 	width: 13px;
 	height: 13px;
-	margin-top: 7px;
+	margin-top: 10px;
 	margin-left: 12px;
 }
 .fig4{
@@ -224,8 +216,8 @@ li a{
 .icon{
 	width: 17px;
 	height: 17px;
-	margin-top: 6px;
-	margin-left: 10px;
+	margin-top: 8px;
+	margin-left: 12px;
 }
 .fig5{
 	margin-right: 0px;
@@ -240,7 +232,7 @@ input{
 	color: #7d756c;
 	padding-left: 5px;
 }
-.fig6{
+#fig6{
 	width: 32px;
 	height: 33px;
 	border: 2px solid #24211e;
@@ -317,58 +309,112 @@ li{
 	background: url(../img/percentage.png) no-repeat center / cover;
 }
 #loadingBar{
-	width: 157px;
-	height: 14px;
-	margin-top: 14px;
-	margin-left: 4px;
+	position: relative;
+	background: url(../img/loading_bar.png) no-repeat center / contain;
+	width: 100%;
+	height: 100%;
 }
 #progressBar{
-	width: 93px;
-	height: 9px;
+	width: 5px;
+	height: 8px;
 	position: absolute;
-	top: 181px;
-	left: 591px;
+	left: 3px;
+	top: 2px;
+	bottom: 2px;
+	background: url(../img/progressBar2.png) no-repeat center / cover;
 }
 #draggable{
-	width: 16px;
-	height: 16px;
+	background: url(../img/dot_progress_bar.png) no-repeat center / contain;
+	width: 15px;
+	height: 15px;
 	position: absolute;
-	top: 177px;
-	left: 673px;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	cursor: pointer;
+	transform: translateX(-10px);
+	padding: 0 10px;
+}
+#div_switch_draggable{
+	position: absolute;
+	left: 610px;
+	width: 131px;
+	height: 13px;
+	margin-top: 15px;
+	padding: 0;
+}
+#div_switch_draggable2{
+	position: absolute;
+	width: 48px;
+	height: 13px;
+	margin-top: 15px;
+	padding: 0;
+	left: 785px;
+}
+#range_swith_icon2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+#range_swith_icon3{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	opacity: 0;
+	cursor: pointer;
 }
 .clickerItem:hover{
 	background: #544c44;
 	cursor: pointer;
 }
 #loadingBar2{
-	background: url(../img/loading_bar2.png) no-repeat center / contain;
-	width: 56px;
-	height: 14px;
-	margin-top: 15px;
-	margin-left: 1px;
-	display:inline-block;
+	position: relative;
+	background: url(../img/loading_bar.png) no-repeat center / cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
 }
 #progressBar2{
-	background: url(../img/progressBar2.png) no-repeat center / contain;
-	width: 38px;
-	height: 10px;
+	width: 5px;
+	height: 8px;
 	position: absolute;
-	left: 778px;
-	top: 181px;
+	left: 3px;
+	top: 2px;
+	bottom: 2px;
+	background: url(../img/progressBar2.png) no-repeat center / cover;
 }
 #draggable2{
-	width: 16px;
-	height: 16px;
+	background: url(../img/dot_progress_bar.png) no-repeat center / contain;
+	width: 15px;
+	height: 15px;
 	position: absolute;
-	top: 178px;
-	left: 812px;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	cursor: pointer;
+	transform: translateX(-10px);
+	padding: 0 9px 0 5px;
 }
 #volumeIcon{
 	width: 11px;
 	height: 11px;
-	display:inline-block;
-	margin-left: 7px;
-	margin-bottom: 2px;
+	position: absolute;
+	margin-left: -30px;
+	margin-top: 15px;
 }
 .arithmetic{
 	width: 22px;
@@ -457,14 +503,14 @@ li{
 	left: 412px;
 	cursor: pointer;
 	z-index: 1;
-	top: 345px;
+	top: 348px;
 }
 #loadingBar3{
 	width: 76px;
 	height: 9px;
 	position: absolute;
 	left: 418px;
-	top: 352px;
+	top: 354px;
 }
 #dots2{
 	width: 16px;
@@ -473,7 +519,7 @@ li{
 	left: 488px;
 	z-index: 1;
 	cursor: pointer;
-	top: 345px;
+	top: 348px;
 }
 .container_item{
 	display: flex;
@@ -534,18 +580,41 @@ li{
 	cursor: pointer;
 }
 #base4{
+	position: relative;
 	background: url(../img/base4.png) no-repeat center / contain;
-	width: 226px;
-	height: 13px;
-	margin-top: 10px;
-	margin-left: 28px;
+	width: 100%;
+	height: 100%;
 }
 #switch_icon{
 	background: url(../img/switch_icon.png) no-repeat center / contain;
 	width: 20px;
 	height: 20px;
 	position: absolute;
-	left: 442px;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	cursor: pointer;
+	transform: translateX(-10px);
+}
+#div_switch_icon{
+	position: absolute;
+	left: 368px;
+	width: 175px;
+	height: 32px;
+	margin-top: 15px;
+	padding: 0 10px;
+}
+#range_swith_icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	opacity: 0;
 	cursor: pointer;
 }
 #faceIcon{
@@ -611,8 +680,8 @@ li{
 	cursor: pointer;
 }
 #triangleUp1{
-	top: 431px;
-    right: 285px;
+	top: 433px;
+    right: 283px;
 }
 .triangleDown{
 	width: 0;
@@ -624,52 +693,52 @@ li{
     cursor: pointer;
 }
 #triangleDown1{
-	top: 445px;
-    right: 285px;
+	top: 448px;
+    right: 283px;
 }
 #day{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 431px;
-    right: 305px;
+	top: 432px;
+    right: 302px;
 }
 #triangleUp2{
-	top: 433px;
-    right: 229px;
+	top: 434px;
+    right: 226px;
 }
 #triangleDown2{
-	top: 446px;
-    right: 229px;
+	top: 448px;
+    right: 226px;
 }
 #month{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 431px;
-    right: 248px;
+	top: 432px;
+    right: 247px;
 }
 #year1half{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 431px;
-    right: 192px;
+	top: 432px;
+    right: 190px;
 }
 #year2half{
 	font-size: 19px;
 	color: #f5f5f5;
 	position: absolute;
-	top: 431px;
-    right: 158px;
+	top: 432px;
+    right: 156px;
 }
 #triangleUp3{
-	top: 433px;
-    right: 138px;
+	top: 434px;
+    right: 135px;
 }
 #triangleDown3{
-	top: 446px;
-    right: 138px;
+	top: 448px;
+    right: 135px;
 }
 #scrollbar{
 	height: 24px;
@@ -684,7 +753,7 @@ li{
 	background: url(../img/handle.png) no-repeat center / contain;	
 	width: 265px;
 	position: absolute;
-	top: 496px;
+	top: 498px;
 	left: 340px;
 }
 #triangleLeft{
@@ -694,8 +763,8 @@ li{
 	border-width: 3px 6px 3px 0;
 	border-color: transparent white transparent transparent;
 	position: absolute;
-	top: 500px;
-	left: 796px;
+	top: 502px;
+	left: 800px;
 	cursor: pointer;
 }
 #triangleRight{
@@ -705,8 +774,8 @@ li{
 	border-width: 3px 0 3px 6px;
 	border-color: transparent transparent transparent white;
 	position: absolute;
-	top: 500px;
-	left: 817px;
+	top: 502px;
+	left: 820px;
 	cursor: pointer;
 }
 #result{
