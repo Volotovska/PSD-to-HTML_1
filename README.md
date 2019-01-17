@@ -4,7 +4,7 @@ Portfolio of work examples (markup from PSD into HTML-CSS layout using JS/JQuery
 
 Завершенные работы: / Finished works:
 
-1.  Online shop (adaptive / cross-browser markup) 
+1.  Online shop (adaptive / cross-browser markup / bootstrap) 
 2.  Blugraphic 
 3.  Sticky (+JS vanilla)
 4.  Sticky (+JQuery)
